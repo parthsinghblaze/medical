@@ -10,7 +10,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-blue-100/50 dark:from-slate-900 dark:to-slate-800 opacity-80 z-0"></div>
             <div className="absolute right-0 top-0 h-full w-full md:w-1/2 bg-gradient-to-l from-blue-200/20 to-transparent dark:from-blue-900/10 pointer-events-none"></div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pointer-events-none">
                 <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-12">
 
                     {/* Text Content */}
@@ -18,7 +18,7 @@ export default function Hero() {
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left"
+                        className="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left pointer-events-auto"
                     >
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -61,18 +61,19 @@ export default function Hero() {
                         </motion.div>
                     </motion.div>
 
-                    {/* 3D Scene */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        className="w-full md:w-[50vw] md:absolute md:right-0 md:top-0 md:h-full flex justify-center items-center order-1 md:order-2 h-[400px] relative z-0 pointer-events-none"
-                    >
-                        <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent rounded-full filter blur-3xl opacity-30 transform scale-75 animate-pulse"></div>
-                        <ThreeScene />
-                    </motion.div>
                 </div>
             </div>
+
+            {/* 3D Scene - Positioned absolutely to take up full height/width on right without being constrained by max-w-7xl */}
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, delay: 0.2 }}
+                className="w-full md:w-[50vw] md:absolute md:right-0 md:top-0 md:h-full flex justify-center items-center h-[400px] relative z-0 pointer-events-auto overflow-hidden md:overflow-visible"
+            >
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent rounded-full filter blur-3xl opacity-30 transform scale-75 animate-pulse"></div>
+                <ThreeScene />
+            </motion.div>
 
             {/* Scroll Indicator */}
             <motion.div
@@ -88,4 +89,3 @@ export default function Hero() {
         </section>
     );
 }
-

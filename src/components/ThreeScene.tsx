@@ -7,8 +7,12 @@ export default function ThreeScene() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const { theme } = useTheme();
 
+    const pointerInteracting = useRef<number | null>(null);
+    const pointerInteractionMovement = useRef(0);
+    const r = useRef(0);
+
     useEffect(() => {
-        let phi = 0;
+        let width = 0; // Capture width for rotation calc
 
         // Default to dark mode colors if theme is undefined or light 
         // (Adjust these rgb values [0-1] to match your brand colors)
@@ -20,10 +24,14 @@ export default function ThreeScene() {
 
         if (!canvasRef.current) return;
 
+        const onResize = () => canvasRef.current && (width = canvasRef.current.offsetWidth)
+        window.addEventListener('resize', onResize)
+        onResize()
+
         const globe = createGlobe(canvasRef.current, {
             devicePixelRatio: 2,
-            width: 1000 * 2,
-            height: 1000 * 2,
+            width: width * 2,
+            height: width * 2,
             phi: 0,
             theta: 0,
             dark: 1, // Always use dark mode style for better contrast on gradients
@@ -48,28 +56,71 @@ export default function ThreeScene() {
             onRender: (state) => {
                 // Called on every animation frame.
                 // `state` will be an empty object, return updated params.
-                state.phi = phi;
-                phi += 0.003; // Rotation speed
+                if (!pointerInteracting.current) {
+                    r.current += 0.003;
+                }
+                state.phi = r.current + pointerInteractionMovement.current;
+                state.width = width * 2;
+                state.height = width * 2;
             },
         });
 
         return () => {
             globe.destroy();
+            window.removeEventListener('resize', onResize);
         };
     }, [theme]);
 
     return (
-        <div className="w-full h-full min-h-[500px] flex items-center justify-center relative overflow-hidden transition-opacity duration-1000 ease-in-out">
+        <div className="w-full h-full min-h-[500px] flex items-center justify-center relative transition-opacity duration-1000 ease-in-out">
             <div className="absolute inset-0 bg-gradient-to-t from-background-light via-transparent to-transparent dark:from-background-dark z-10 opacity-20 pointer-events-none" />
             <canvas
                 ref={canvasRef}
-                style={{
-                    width: 800,
-                    height: 800,
-                    maxWidth: "100%",
-                    aspectRatio: "1",
+                onPointerDown={(e) => {
+                    pointerInteracting.current = e.clientX;
+                    r.current += pointerInteractionMovement.current;
+                    pointerInteractionMovement.current = 0;
+                    if (canvasRef.current) canvasRef.current.style.cursor = 'grabbing';
                 }}
-                className="w-full max-w-[600px] aspect-square fade-in-globe"
+                onPointerUp={() => {
+                    pointerInteracting.current = null;
+                    if (canvasRef.current) canvasRef.current.style.cursor = 'grab';
+                }}
+                onPointerOut={() => {
+                    pointerInteracting.current = null;
+                    if (canvasRef.current) canvasRef.current.style.cursor = 'grab';
+                }}
+                onMouseMove={(e) => {
+                    if (pointerInteracting.current !== null) {
+                        const delta = e.clientX - pointerInteracting.current;
+                        pointerInteractionMovement.current = delta / 200;
+                    }
+                }}
+                onTouchStart={(e) => {
+                    if (e.touches[0]) {
+                        pointerInteracting.current = e.touches[0].clientX;
+                        r.current += pointerInteractionMovement.current;
+                        pointerInteractionMovement.current = 0;
+                    }
+                }}
+                onTouchMove={(e) => {
+                    if (pointerInteracting.current !== null && e.touches[0]) {
+                        const delta = e.touches[0].clientX - pointerInteracting.current;
+                        pointerInteractionMovement.current = delta / 200;
+                    }
+                }}
+                onTouchEnd={() => {
+                    pointerInteracting.current = null;
+                }}
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    maxWidth: "800px",
+                    aspectRatio: "1",
+                    cursor: 'grab',
+                    contain: 'layout paint size',
+                }}
+                className="fade-in-globe"
             />
         </div>
     );
