@@ -1,26 +1,45 @@
 @import "tailwindcss";
+/* @plugin "tailwindcss-animate"; */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #1A2E65;
+  --color-accent: #F2A900;
+  --color-secondary: #0F72D6;
+  --color-background-light: #FFFFFF;
+  --color-background-dark: #0B1120;
+  --color-surface-light: #F0F7FF;
+  --color-surface-dark: #162033;
+  --color-text-light: #334155;
+  --color-text-dark: #E2E8F0;
+
+  --image-hero-gradient: linear-gradient(90deg, #F0F8FF 0%, #D6EAF8 100%);
+  --image-hero-gradient-dark: linear-gradient(90deg, #0B1120 0%, #111827 100%);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-montserrat);
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background-light);
+  color: var(--color-text-light);
+}
+
+.dark body {
+  background: var(--color-background-dark);
+  color: var(--color-text-dark);
 }
