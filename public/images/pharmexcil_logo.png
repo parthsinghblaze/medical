@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>PHARMACEUTICALS EXPORT PROMOTION COUNCIL OF INDIA</title>
+<meta name="description" content="PHARMACEUTICALS EXPORT PROMOTION COUNCIL OF INDIA" />
+<meta name="keywords" content="Pharmexcil" />	
+<!-- Reset CSS -->
+<link href="https://pharmexcil.com/resp/css/reset.css" rel="stylesheet" type="text/css">
+<link href="https://pharmexcil.com/resp/css/custom_settings.css" rel="stylesheet" type="text/css">
+<!-- Custom Fonts -->
+<link href="https://pharmexcil.com/resp/css/fonts.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<link href="https://pharmexcil.com/resp/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!-- Select2 -->
+<link href="https://pharmexcil.com/resp/assets/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+<!-- Font Awesome -->
+<link href="https://pharmexcil.com/resp/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- Magnific Popup -->
+<link href="https://pharmexcil.com/resp/assets/magnific-popup/css/magnific-popup.css" rel="stylesheet" type="text/css">
+<!-- Iconmoon -->
+<link href="https://pharmexcil.com/resp/assets/iconmoon/css/iconmoon.css" rel="stylesheet" type="text/css">
+<!-- Owl Carousel -->
+<link href="https://pharmexcil.com/resp/assets/owl-carousel/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+<!-- Animate -->
+<link href="https://pharmexcil.com/resp/css/animate.css" rel="stylesheet" type="text/css">
+<!-- Custom Style -->
+<link href="https://pharmexcil.com/resp/css/custom_blue3.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+	  
+
+    <![endif]-->
+	
+	
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+		new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,hi,ar,zh-CN,zh-TW,fr,ru,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+		}
+	</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="https://chemexcil.in/js/functions.js"></script>
+    
+
+
+<script type="text/javascript" src="https://pharmexcil.com/resp/js/jquery_1.9.1.min.js"></script>
+
+<script src="https://pharmexcil.com/resp/js/skdslider.min.js" type="text/javascript"></script>
+
+<link href="https://pharmexcil.com/resp/js/skdslider.css" rel="stylesheet">
+
+<!--[if gte IE 8]>
+
+<style>
+
+.skdslider{
+
+ width:100%;
+
+ position: relative;
+
+ display: block;
+
+ overflow:hidden;
+
+height:100%;
+
+min-height: 300px;
+
+
+
+}
+
+
+
+.skdslider ul.slides{ margin:0; padding:0; list-style-type:none;}
+
+.skdslider ul.slides li
+
+{
+
+   display: none;
+
+}
+
+.skdslider ul.slides li img{
+
+    width: 100%;
+
+	height:100%;
+
+	min-height: 300px;
+
+	border:0;
+
+}
+
+.tdnews{
+
+height:250px;
+
+}
+
+</style>
+
+<![endif]-->
+
+<script type="text/javascript">
+
+		jQuery(window).load(function(){
+
+			jQuery('#demo1').skdslider({delay:5000, animationSpeed: 2000,showNextPrev:true,showPlayButton:true,autoSlide:true,animationType:'fading'});
+
+			jQuery('#demo2').skdslider({delay:5000, animationSpeed: 1000,showNextPrev:true,showPlayButton:false,autoSlide:true,animationType:'sliding'});
+
+			jQuery('#demo3').skdslider({delay:5000, animationSpeed: 2000,showNextPrev:true,showPlayButton:true,autoSlide:true,animationType:'fading'});
+
+			
+
+			jQuery('#responsive').change(function(){
+
+			  $('#responsive_wrapper').width(jQuery(this).val());
+
+			  $(window).trigger('resize');
+
+			});
+
+			
+
+		});
+
+</script>
+
+<script src="https://pharmexcil.com/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="https://pharmexcil.com/js/jquery.validate.js" type="text/javascript"></script>
+<script src="https://pharmexcil.com/js/functions.js" type="text/javascript"></script>	
+	
+	<style>
+	.modal-dialog {
+	 width: 300px;
+	 margin: 30px auto;
+}
+		.modal-header {
+		padding: 0px;
+		border-bottom: 0px solid #e5e5e5;
+		}
+		
+.modal {
+position: fixed;
+top: 100px;
+right: 0px;
+bottom: 0;
+left: 0;
+z-index: 1050;
+display: none;
+overflow: hidden;
+-webkit-overflow-scrolling: touch;
+outline: 0;
+}	
+		
+		.close {
+float: right;
+font-size: 21px;
+font-weight: 700;
+line-height: 1;
+color: #f60;
+/* text-shadow: 0 1px 0 #fff; */
+/* filter: alpha(opacity=20); */
+/* opacity: .2; */
+}
+.modal-header .close {
+margin-top: -21px;
+}
+		
+	
+
+.head_b2b {
+    padding-left: 10px;
+    background: #eef9fd url(https://pharmexcil.com/images/flag_bg.jpg) no-repeat right;
+    background-color: #d2e7de;
+}	
+		
+	</style>
+	
+</head>
+<body>
+<!-- Start Header -->
+<header> 
+  <!-- Start Header top Bar -->
+  <div class="header-top">
+    <div class="container clearfix ">
+     <!-- <ul class="follow-us hidden-xs pull-right">
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        
+      </ul>-->
+		&nbsp;
+      <div class="right-block clearfix" id="google_translate_element">
+        
+        
+      </div>
+    </div>
+  </div>
+  <!-- End Header top Bar --> 
+  <!-- Start Header Middle -->
+  <div class="header-middle">
+	   <div class="row head_b2b ml-0 mr-0 mb" style="text-align: center;">
+    <div class="col-xs-12 col-sm-12"><a href="https://pharmexcil.com/"><img src="https://pharmexcil.com/resp/images/pharmexcil_logo_new_MB.png"  alt=""></a></div>      
+      
+    </div>
+	  
+    <div class="row head_b2b ml-0 mr-0">
+	
+        <div class="col-xs-12 col-sm-3 dt"><a href="https://pharmexcil.com/" ><img src="https://pharmexcil.com/resp/images/pharmexcil_logo_small.png"  alt=""></a></div>  
+		
+        <div class="col-xs-12 col-sm-4 dt"><a href="https://pharmexcil.com/"><img src="https://pharmexcil.com/resp/images/pharmexcil_title_logo.png"  alt="" ></a></div> 
+ 
+		<div class="col-xs-12 col-sm-4 dt"><a href="https://pharmexcil.com/"><img style="margin-top:10px;  margin-left:100px; width:430px" src="https://pharmexcil.com/resp/images/3logos.jpg"  alt=""></a></div>
+		
+		
+     </div>
+  </div> 
+	
+  <!-- End Header Middle --> 
+  <!-- Start Navigation -->
+  <nav class="navbar navbar-inverse">
+    <div class="row ml-0 mr-0">
+      <div class="navbar-header">
+        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar">
+        
+         <ul class="nav navbar-nav">
+                          
+      <li><a href="https://pharmexcil.com/">Home</a></li>
+      <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>About US<span class='caret'></span></a>
+      		<ul class='dropdown-menu'>
+           		 <li><a href="https://pharmexcil.com/committee-of-administration" tabindex="-1">Committee of Administration</a></li>
+				 <li><a href="https://pharmexcil.com/content/role-of-council/442/8cfa6997d4cd231b69d5c1526cbd90d0.html" tabindex="-1">Role of Council</a></li> 
+           		 <li><a href="https://pharmexcil.com/articles-of-association" tabindex="-1">Articles of Association <img src="https://pharmexcil.com/images/new_icon_red.gif"></a> </li>
+           		
+            	 <li><a href="https://pharmexcil.com/annual-report" tabindex="-1">Annual Report</a></li>
+                 <li><a href="https://pharmexcil.com/content/list-of-mous-signed-by-pharmexcil/240/7144f8924ff5908ed3e946f743a13b7d.html" target="_blank" tabindex="-1">List of MoUs Signed by Pharmexcil</a></li>
+            </ul>
+      </li>
+       <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Our Services<span class='caret'></span></a>
+       <ul class='dropdown-menu'>
+           		 <!--<li><a href="https://pharmexcil.com/uploadfile/ufiles/RCMC_ApplicationForms.pdf" target="_blank" tabindex="-1">Membership Application Form</a></li>-->
+           		 <li><a href="https://pharmexcil.com/relevent-members-forms" tabindex="-1">MDA/MAI Forms</a></li>
+           		 <li><a href="https://pharmexcil.com/content/certificate-of-origin/354/c43080a28cb18a9c80090f8e469e8e03.html" target="_blank" tabindex="-1">Certification of Origin</a></li>
+            </ul>
+       </li>
+       <li> <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Members<span class='caret'></span></a>
+       		<ul class='dropdown-menu'>
+				<li><a href="https://pharmexcil.com/members" tabindex="-1">View Members</a></li>
+				<li><a href="https://pharmexcil.com/trade-enquiries" tabindex="-1">Trade Enquiries</a></li>
+				<li><a href="https://pharmexcil.com/relevent-members-forms" tabindex="-1">Relevant Member Forms</a></li>
+				<li><a href="https://pharmexcil.com/reprensetations-to-government" tabindex="-1">Representations to Government</a></li>
+				<li><a href="https://pharmexcil.in/member/login" target="_blank" tabindex="-1">Submit Quaterly Reports</a></li>
+				<!--<li><a href="https://pharmexcil.com/indian-pharma-companies" tabindex="-1">Indian Pharma Companies</a></li>-->
+				<li><a href="https://pharmexcil.com/economic-and-commercial-reports" tabindex="-1">Economic &amp; Commercial Reports</a></li>
+				<!--<li><a href="https://pharmexcil.com/market-information-and-reports">&bull; Market Information & Reports</a></li>-->
+			    <li><a href="https://pharmexcil.com/drugregister-marketreport-ipr" tabindex="-1">Market Information &amp; Reports</a></li>  
+				<li><a href="https://pharmexcil.com/circulars-for-members" tabindex="-1">Circulars for Members</a></li>
+				<li><a href="https://pharmexcil.com/general-information" tabindex="-1">General Information</a></li>
+				<li><a href="#" target="_blank" tabindex="-1">Tenders</a></li>	
+				<li><a href="https://pharmexcil.com/content/members-achievements/129/588e63cb38debaf6f7decc1e440bdb68" tabindex="-1">Members Achievements</a></li>
+     </ul>
+       </li> 
+       <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Events<span class='caret'></span></a>
+       		<ul class='dropdown-menu'>
+			<li><a href="#" target="_blank">Pharmexcil Events 2025-26 <!--<img src="https://pharmexcil.com/images/new_icon_red.gif">--> </a></li>
+			<li><a href="https://pharmexcil.com/uploads/files/Calender_for2024_25MAIProposals.pdf" target="_blank">Pharmexcil Events 2024-25 </a></li>
+            <li><a href="https://pharmexcil.com/uploads/files/CALENDER_OF_EVENTS_for_Event_Abroad_2023_2024.pdf" target="_blank">Pharmexcil Events 2023-24  </a></li>
+			<li><a href="https://pharmexcil.com/uploadfile/ufiles/Calender_for2022_23MAIProposals.pdf" target="_blank">Pharmexcil Events 2022-23 </a></li>	
+			<!--<li><a href="https://pharmexcil.com/docs/Calendar_for_19_20.pdf" target="_blank">Pharmexcil Events 2019-20  </a></li>	
+           <li><a href="https://pharmexcil.com/docs/Calendar_for_18_19.pdf" target="_blank">Pharmexcil Events 2018-19 </a></li> -->
+            <li><a href="https://pharmexcil.com/conferences-and-presentation" tabindex="-1">Conferences &amp; Presentation</a></li>
+				<li><a href="https://pharmexcil.com/general-pharma-events" tabindex="-1">General Pharma Events</a></li>
+            </ul>
+       </li>      
+    
+	<li><a href='https://pharmexcil.com/bidding/tenders_list' class='dropdown-toggle' style="color:aqua" ><strong>Tenders</strong> <img src="https://pharmexcil.com/images/new_icon_red.gif" width="25px"></a>  
+       		
+       </li>
+         <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Media<span class='caret'></span></a>
+       		<ul class='dropdown-menu'>
+			    <li><a href="https://pharmexcil.com/news_article" tabindex="-1">Pharma  News Articles</a></li>
+            	<li><a href="https://pharmexcil.com/pharmexcil-in-media" tabindex="-1">Pharma in News</a></li>
+   		 		<li><a href="https://pharmexcil.com/global-pharma-news" tabindex="-1">Global Pharma News</a></li>
+                <li><a href="https://pharmexcil.com/country-wise-news" tabindex="-1">Country Wise</a></li>
+                <li><a href="https://pharmexcil.com/news-on-counterfeit-drugs" tabindex="-1">News on Counterfeit Drugs</a></li>
+                <li><a href="https://pharmexcil.com/drugregister-marketreport-ipr" tabindex="-1">Drug Reg./Market Reports/IPR</a></li>
+                <li><a href="https://pharmexcil.com/photo-gallery" tabindex="-1">Photo Gallery</a></li>
+   		 		<li><a href="https://pharmexcil.com/video-gallery" tabindex="-1">Video Gallery</a></li>
+            </ul>
+      </li> 
+      
+      
+        <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Resource Center<span class='caret'></span></a>
+       		<ul class='dropdown-menu'>
+            	<li><a href="https://pharmexcil.com/content/pharmexcil-study-reports/470/662048d1eae494272beb54b61fb1a94f.html"  tabindex="-1">Pharmexcil Study Reports</a></li>
+				<li><a href="https://pharmexcil.com/relevent-members-forms" tabindex="-1">MDA</a></li>
+   		 		<li><a href="https://tracktrace.blogspot.in/" target="_blank" tabindex="-1">Barcode</a></li>
+                <li><a href="https://pharmexcil.com/content/exemption-from-barcoding/368/13499c3ad73a2c795aed941624df692d.html" tabindex="-1"> 	Exemption from Barcoding</a></li>
+                <li><a href="https://pharmexcil.com/government-schemes" tabindex="-1">Government Schemes</a></li>
+                <li><a href="https://pharmexcil.com/useful-information" tabindex="-1">Useful Information</a></li>
+                 <li><a href="https://chemicals.nic.in/chem4.htm" target="_blank" tabindex="-1">Chemical Weapons Convention</a></li>
+                 <li><a href="https://pharmexcil.com/trade-statistics" tabindex="-1">Trade Statistics</a></li>
+                <li><a href="https://meaprotocol.nic.in/cgi-bin/db2www/foreignmission.d2w/seDataMis" target="_blank" tabindex="-1">Foreign Missions in India</a></li>
+                 <li><a href="https://pharmexcil.com/government-notifications-circulars" tabindex="-1">Government Notifications/Circulars</a></li>
+                 
+                <li><a href="https://india.gov.in/overseas/indian_missions.php" target="_blank" tabindex="-1">Indian Misions abroad</a></li>
+                 <li><a href="https://pharmexcil.com/indian-pharma-companies" tabindex="-1">Indian Pharma Companies</a></li>
+                <li><a href="https://pharmexcil.com/international-guidelines" tabindex="-1">International Guidelines</a></li>
+                <li><a href="https://pharmexcil.com/drappajis-compilation" tabindex="-1">Knowledge Corpus - Compiled by Dr.Appaji	</a></li>
+                <li><a href="https://pharmexcil.com/docs/PXL_HolidaysList.pdf" target="_blank" tabindex="-1">List of Holidays</a></li>
+                 <li><a href="https://pharmexcil.com/drugregister-marketreport-ipr" tabindex="-1">Market Information &amp; Reports</a></li>
+                 <li><a href="https://pharmexcil.com/content/pharmexcil-research-publications/223/57880ed74e7cde1c703c2d1505335dfc" tabindex="-1">Pharmexcil Research Publications</a></li>
+                <li><a href="https://pharmexcil.com/ministrial_meetings" tabindex="-1">Record notes of Important Ministerial Meetings</a></li>
+				<li><a href="https://pharmexcil.com/uploads/ICC_Order_copy_Pharmexcil.pdf" target="_blank" tabindex="-1">Office Order-Internal Complaints Committee under the provisions/guidelines of Sexual Harassment of Women at Workplace</a></li>
+
+            </ul>
+      </li> 
+	   <li class='dropdown'><a href="https://pharmexcil.com/mai-scheme" tabindex="-1" data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>MAI Scheme<span class='caret'></span></a>
+	
+	    <ul class='dropdown-menu'>
+            	<li><a href="https://pharmexcil.com/mai-scheme" tabindex="-1">MAI Scheme</a></li>
+			    <li><a href="https://pharmexcil.com/mai-circulars" tabindex="-1">MAI Circulars</a></li>
+			    <li><a href="https://pharmexcil.com/list-of-beneficiaries" tabindex="-1">List of Beneficiaries (FMO)</a></li>
+			    <li><a href="https://pharmexcil.com/list-of-countries" tabindex="-1">Reference Dates for Calculating Eligibility Criteria (List of Countries)</a></li>
+			
+			
+		   </ul>
+	
+	  </li>
+       <li><a href="https://pharmexcil.com/faqs" tabindex="-1">FAQ's</a></li>
+      
+        <li class='dropdown'><a href='https://pharmexcil.com/contact-us' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Contact Us<span class='caret'></span></a>
+            <ul class='dropdown-menu'>
+            	<li><a href="https://pharmexcil.com/contact-us" tabindex="-1">Contact</a></li> 
+				<li><a href="https://pharmexcil.com/feedback" tabindex="-1">Feedback</a></li>
+            </ul>
+       </li>              
+     	  <li><a href="https://pharmexcil.com/my-account" tabindex="-1" class=""><font>Login</font></a></li>
+	
+	        </ul>      </div>
+    </div>
+  </nav>
+  <!-- End Navigation --> 
+</header>
+<!-- End Header --> 
+
+<div class="row ml-0 mr-10">
+<div class="col-sm-2 text-left pt-10 pl-5 pr-5 dt" style="min-height:450px; background-color:#f1f1f1; width:20%">
+
+    <!--<div class="lefnav">
+    <a href="#" class="active" title="Only For Css Menu">Only For Css Menu</a>
+    <a href="#" title="Only For Css Menu">Only For Css Menu 2</a>
+    <a href="#" title="Only For Css Menu">Only For Css Menu 3</a>
+    <a href="#" title="Only Css Menu">Only Css Menu 4</a>
+    <a href="#" title=" Css based Menu">Css based Menu</a>
+    <a href="#">Only For Css Menu 6</a>
+    <a href="#" title="Only For Css Menu">Only For Css Menu 7</a>
+    </div>-->
+    
+    
+    <div class="Blue_panel_with_menu clearfix">
+    
+		 <ul>
+							<h2><span>Home</span></h2>
+				<div class="panel_blue_container">
+				<ul class="left_navigation clearfix">
+					<li><a href="https://pharmexcil.com/">Home</a></li>
+					 </ul>
+			     </div>
+					
+					
+        
+   
+    <div class="bl"></div>
+    <div class="br"></div>
+    </div>
+
+
+</div>
+<div class="col-sm-10 text-left mbody"><table align="center" border="0" cellpadding="0" cellspacing="0"  width="98%">
+				
+	<tr align="left" >
+		<td align="left" class="arrows" height="27"><a href="https://pharmexcil.com/"><span class='navigation'>Home</span></a>&raquo;  <a href="https://pharmexcil.com/images.html" class="pageheader">Images</a>&raquo;  Logo.png</td><td class="arrows" align="right">
+					<a class="button_g" href="javascript:history.back();"><b>Back</b></a>
+					</td>
+	</tr>
+</table>
+<div id="content">
+	<table width="90%" height="100%">
+<tbody><tr>
+<td><img src="https://pharmexcil.com/images/pic1.png"></td>
+<td width="100%" align="center" valign="middle">
+<center><h1><u><strong>Bad Request. Please correct your URL</strong></u></h1>
+
+<font face="Arial">You have reached this page because the requested page is unable to get processed<br><br><a href="https://pharmexcil.com/">Go to  home page</a></font><br><br><br></center></td></tr>
+</tbody></table>
+
+
+	</div></div>
+
+</div>       
+
+<!-- Start Footer -->
+<footer class="footer"> 
+
+  <!-- Start Footer Bottom -->
+  <div class="bottom">
+    <div class="container">
+      <div class="row">
+        
+        
+        <div class="col-sm-12 text-center">
+         
+Disclaimer: The translation into various languages is provided for the benefit of visitors.  Pharmexcil is not responsible for any wrong interpretations/mistakes.<br>
+
+For authenticated information in this site, please contact <a href="mailto:info@pharmexcil.com" style="color:#FFFFFF">info@pharmexcil.com</a><br>
+
+</div>
+<div class="col-sm-12 text-center">
+ 
+
+
+    <a href="https://pharmexcil.com/refund_return_cancellation" style="color:#FFFFFF">Refund Return & Cancellation</a> | <a href="https://pharmexcil.com/privacy_policy" style="color:#FFFFFF">Privacy Policy</a> | <a href="https://pharmexcil.com/terms_and_conditions" style="color:#FFFFFF">Terms & Conditions</a>
+    
+	<br> Copyright © 2009 Pharmexcil. All rights reserved.<br> 
+
+    Powered by: <a href="https://ibongo.biz/" style="color:#FFFFFF">iBongo</a><br>
+	<span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=shPc4wWhBRNvWmnpaOnZnNIT6tSneUcVLe5x8aa165uprry1KDtkJTBq5c6Y"></script></span>
+</div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer Bottom --> 
+</footer>
+<!-- End Footer --> 
+
+<!-- Scroll to top --> 
+<a href="#" class="scroll-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!-- Bootsrap JS --> 
+<script type="text/javascript" src="https://pharmexcil.com/resp/assets/bootstrap/js/bootstrap.min.js"></script> 
+<!-- Select2 JS --> 
+<script type="text/javascript" src="https://pharmexcil.com/resp/assets/select2/js/select2.min.js"></script> 
+<!-- Match Height JS --> 
+<script type="text/javascript" src="https://pharmexcil.com/resp/assets/matchHeight/js/matchHeight-min.js"></script> 
+<!-- Bxslider JS --> 
+<script type="text/javascript" src="https://pharmexcil.com/resp/assets/bxslider/js/bxslider.min.js"></script> 
+<!-- Waypoints JS --> 
+<script type="text/javascript" src="https://pharmexcil.com/resp/assets/waypoints/js/waypoints.min.js"></script> 
+<!-- Counter Up JS --> 
+<script type="text/javascript" src="https://pharmexcil.com/resp/assets/counterup/js/counterup.min.js"></script> 
+<!-- Magnific Popup JS --> 
+<script type="text/javascript" src="https://pharmexcil.com/resp/assets/magnific-popup/js/magnific-popup.min.js"></script> 
+<!-- Owl Carousal JS --> 
+<script type="text/javascript" src="https://pharmexcil.com/resp/assets/owl-carousel/js/owl.carousel.min.js"></script> 
+<!-- Modernizr JS --> 
+<script type="text/javascript" src="https://pharmexcil.com/resp/js/modernizr.custom.js"></script> 
+<!-- Custom JS --> 
+<script type="text/javascript" src="https://pharmexcil.com/resp/js/custom.js"></script>
+</body>
+
+</html>

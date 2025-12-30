@@ -7,9 +7,10 @@ export default function ThreeScene() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const { theme } = useTheme();
 
-    const pointerInteracting = useRef<number | null>(null);
-    const pointerInteractionMovement = useRef(0);
+    const pointerInteracting = useRef<{ x: number, y: number } | null>(null);
+    const pointerInteractionMovement = useRef({ phi: 0, theta: 0 });
     const r = useRef(0);
+    const t = useRef(0);
 
     useEffect(() => {
         let width = 0; // Capture width for rotation calc
@@ -34,19 +35,18 @@ export default function ThreeScene() {
             height: width * 2,
             phi: 0,
             theta: 0,
-            dark: 1, // Always use dark mode style for better contrast on gradients
+            dark: isDark ? 1 : 0,
             diffuse: 1.2,
             mapSamples: 16000,
             mapBrightness: 6,
-            baseColor: [0.1, 0.18, 0.4], // Deep Blue (#1A2E65)
-            markerColor: [0.95, 0.66, 0], // Gold Accent (#F2A900)
-            glowColor: [0.06, 0.45, 0.84], // Bright Blue Glow
+            baseColor: isDark ? [0.1, 0.18, 0.4] : [0.93, 0.93, 0.93],
+            markerColor: isDark ? [0.95, 0.66, 0] : [0.2, 0.5, 0.9],
+            glowColor: isDark ? [0.06, 0.45, 0.84] : [1, 1, 1],
             markers: [
-                // approximate locations for global hubs
                 { location: [37.7595, -122.4367], size: 0.03 }, // San Francisco
                 { location: [40.7128, -74.006], size: 0.03 }, // New York
                 { location: [51.5074, -0.1278], size: 0.03 }, // London
-                { location: [28.6139, 77.2090], size: 0.1 }, // New Delhi (Larger for HQ)
+                { location: [28.6139, 77.2090], size: 0.1 }, // New Delhi
                 { location: [35.6762, 139.6503], size: 0.03 }, // Tokyo
                 { location: [-33.8688, 151.2093], size: 0.03 }, // Sydney
                 { location: [-23.5505, -46.6333], size: 0.03 }, // Sao Paulo
@@ -59,7 +59,8 @@ export default function ThreeScene() {
                 if (!pointerInteracting.current) {
                     r.current += 0.003;
                 }
-                state.phi = r.current + pointerInteractionMovement.current;
+                state.phi = r.current + pointerInteractionMovement.current.phi;
+                state.theta = t.current + pointerInteractionMovement.current.theta;
                 state.width = width * 2;
                 state.height = width * 2;
             },
@@ -77,9 +78,10 @@ export default function ThreeScene() {
             <canvas
                 ref={canvasRef}
                 onPointerDown={(e) => {
-                    pointerInteracting.current = e.clientX;
-                    r.current += pointerInteractionMovement.current;
-                    pointerInteractionMovement.current = 0;
+                    pointerInteracting.current = { x: e.clientX, y: e.clientY };
+                    r.current += pointerInteractionMovement.current.phi;
+                    t.current += pointerInteractionMovement.current.theta;
+                    pointerInteractionMovement.current = { phi: 0, theta: 0 };
                     if (canvasRef.current) canvasRef.current.style.cursor = 'grabbing';
                 }}
                 onPointerUp={() => {
@@ -92,21 +94,30 @@ export default function ThreeScene() {
                 }}
                 onMouseMove={(e) => {
                     if (pointerInteracting.current !== null) {
-                        const delta = e.clientX - pointerInteracting.current;
-                        pointerInteractionMovement.current = delta / 200;
+                        const deltaX = e.clientX - pointerInteracting.current.x;
+                        const deltaY = e.clientY - pointerInteracting.current.y;
+                        pointerInteractionMovement.current = {
+                            phi: deltaX / 200,
+                            theta: deltaY / 200,
+                        };
                     }
                 }}
                 onTouchStart={(e) => {
                     if (e.touches[0]) {
-                        pointerInteracting.current = e.touches[0].clientX;
-                        r.current += pointerInteractionMovement.current;
-                        pointerInteractionMovement.current = 0;
+                        pointerInteracting.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+                        r.current += pointerInteractionMovement.current.phi;
+                        t.current += pointerInteractionMovement.current.theta;
+                        pointerInteractionMovement.current = { phi: 0, theta: 0 };
                     }
                 }}
                 onTouchMove={(e) => {
                     if (pointerInteracting.current !== null && e.touches[0]) {
-                        const delta = e.touches[0].clientX - pointerInteracting.current;
-                        pointerInteractionMovement.current = delta / 200;
+                        const deltaX = e.touches[0].clientX - pointerInteracting.current.x;
+                        const deltaY = e.touches[0].clientY - pointerInteracting.current.y;
+                        pointerInteractionMovement.current = {
+                            phi: deltaX / 200,
+                            theta: deltaY / 200,
+                        };
                     }
                 }}
                 onTouchEnd={() => {
@@ -119,6 +130,7 @@ export default function ThreeScene() {
                     aspectRatio: "1",
                     cursor: 'grab',
                     contain: 'layout paint size',
+                    opacity: theme === 'dark' ? 1 : 0.8,
                 }}
                 className="fade-in-globe"
             />

@@ -4,6 +4,12 @@ import CoreOfferings from '../components/CoreOfferings';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
+import ExportExpertise from '../components/ExportExpertise';
+import Certifications from '../components/Certifications';
+import WhoWeAre from '../components/WhoWeAre';
+import StatsSection from '../components/StatsSection';
+import TrustSection from '../components/TrustSection';
+import GlobalPresence from '../components/GlobalPresence';
 
 export default function HomePage() {
     return (
@@ -11,7 +17,12 @@ export default function HomePage() {
             <Header />
             <Hero />
             <CoreOfferings />
-            <Services />
+            <ExportExpertise />
+            <WhoWeAre />
+            <StatsSection />
+            <GlobalPresence />
+            <TrustSection />
+            <Certifications />
             <Footer />
             <WhatsAppButton />
         </main>

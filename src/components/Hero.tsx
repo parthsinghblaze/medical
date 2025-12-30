@@ -11,54 +11,60 @@ export default function Hero() {
             <div className="absolute right-0 top-0 h-full w-full md:w-1/2 bg-gradient-to-l from-blue-200/20 to-transparent dark:from-blue-900/10 pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pointer-events-none">
-                <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-12">
+                <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-12 h-full">
 
                     {/* Text Content */}
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left pointer-events-auto"
+                        className="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left pointer-events-auto mt-10 md:mt-0"
                     >
                         <motion.div
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.2, duration: 0.6 }}
+                            transition={{ delay: 0.1, duration: 0.5 }}
+                            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 backdrop-blur-sm mb-6"
                         >
-                            <span className="inline-block py-1 px-3 rounded-full bg-blue-100 dark:bg-blue-900 text-secondary dark:text-blue-300 text-xs font-bold tracking-wider uppercase mb-4 shadow-sm border border-blue-200 dark:border-blue-700">
-                                Global Healthcare Leader
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+                            </span>
+                            <span className="text-secondary dark:text-blue-300 text-xs font-bold tracking-wide uppercase">
+                                Global Healthcare Partner
                             </span>
                         </motion.div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold text-primary dark:text-white leading-[1.1] mb-6">
-                            Experts In <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">Global</span> <br />
-                            Pharmaceuticals <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-500">Exports</span>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-slate-900 dark:text-white leading-tight mb-6">
+                            Bridging Borders with <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-500">Premium Pharmaceuticals</span>
                         </h1>
 
                         <motion.p
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 0.4, duration: 0.8 }}
-                            className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed font-light"
+                            transition={{ delay: 0.3, duration: 0.8 }}
+                            className="text-base md:text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-xl mx-auto md:mx-0 leading-relaxed font-medium"
                         >
-                            Delivering top-notch medications to partners across the globe. <br className="hidden md:block" />
-                            Reliable. Compliant. Efficient.
+                            We specialize in exporting high-quality pharmaceutical formulations and APIs. Trusted by partners in over <strong>25+ countries</strong> to deliver excellence, compliance, and care.
                         </motion.p>
 
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.6, duration: 0.6 }}
-                            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+                            transition={{ delay: 0.5, duration: 0.6 }}
+                            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-10"
                         >
-                            <button className="bg-secondary hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-blue-500/30 hover:-translate-y-1 active:translate-y-0 text-lg">
-                                Explore Products
+                            <button className="bg-secondary hover:bg-blue-700 text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-1 active:translate-y-0 text-sm tracking-wide">
+                                View Product Catalog
                             </button>
-                            <button className="bg-white dark:bg-slate-800 text-primary dark:text-white border border-gray-200 dark:border-gray-700 px-8 py-4 rounded-full font-semibold transition-all hover:bg-gray-50 dark:hover:bg-slate-700 shadow-sm hover:shadow-md text-lg">
-                                Contact Us
+                            <button className="bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm text-slate-700 dark:text-white border border-slate-200 dark:border-slate-700 px-8 py-3.5 rounded-full font-bold transition-all hover:bg-white dark:hover:bg-slate-800 shadow-sm hover:shadow text-sm tracking-wide">
+                                Partner With Us
                             </button>
                         </motion.div>
+
+
+
                     </motion.div>
 
                 </div>
