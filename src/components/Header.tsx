@@ -1,11 +1,15 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { Phone, Mail, ChevronDown, Menu, X } from 'lucide-react';
 import { ModeToggle } from './ModeToggle';
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const pathname = usePathname();
+
+    const isActive = (path: string) => pathname === path;
 
     return (
         <>
@@ -74,24 +78,25 @@ export default function Header() {
 
                         {/* Desktop Menu */}
                         <div className="hidden lg:flex items-center space-x-10">
-                            <NavLink href="/" active>Home</NavLink>
-                            <NavLink href="#">Company</NavLink>
+                            <NavLink href="/" active={isActive('/')}>Home</NavLink>
+                            <NavLink href="/about-us" active={isActive('/about-us')}>About Us</NavLink>
                             <div className="relative group h-full flex items-center">
-                                <button className="flex items-center text-sm font-semibold text-gray-600 hover:text-secondary dark:text-gray-300 dark:hover:text-white transition-colors py-2">
-                                    Products & Services
+                                <button className={`flex items-center text-sm font-semibold transition-colors py-2 ${isActive('/services') ? 'text-secondary dark:text-blue-400' : 'text-gray-600 hover:text-secondary dark:text-gray-300 dark:hover:text-white'
+                                    }`}>
+                                    Services
                                     <ChevronDown size={14} className="ml-1 group-hover:rotate-180 transition-transform duration-200" />
                                 </button>
-                                {/* Dropdown Visual (Mock) */}
+                                {/* Dropdown Visual */}
                                 <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-white dark:bg-surface-dark shadow-xl rounded-xl p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 dark:border-gray-800 mt-2">
                                     <div className="flex flex-col space-y-1">
-                                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-secondary rounded-lg">Finished Formulations</a>
-                                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-secondary rounded-lg">API Sourcing</a>
-                                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-secondary rounded-lg">Nutraceuticals</a>
+                                        <Link href="/services/finished-dosage-forms" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-secondary rounded-lg">FDF</Link>
+                                        <Link href="/services/active-pharmaceutical-ingredients" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-secondary rounded-lg">APIs</Link>
+                                        <Link href="/services/reference-listed-drugs" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-secondary rounded-lg">RLDs</Link>
+                                        <Link href="/services/nutraceuticals" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-secondary rounded-lg">Nutraceuticals</Link>
                                     </div>
                                 </div>
                             </div>
-                            <NavLink href="#">Quality</NavLink>
-                            <NavLink href="#">Contact</NavLink>
+                            <NavLink href="/partnerships" active={isActive('/partnerships')}>Our Partnerships</NavLink>
                         </div>
 
                         {/* Actions */}
@@ -123,11 +128,25 @@ export default function Header() {
                 {isMobileMenuOpen && (
                     <div className="lg:hidden bg-white dark:bg-background-dark border-t border-gray-100 dark:border-gray-800 absolute w-full shadow-xl">
                         <div className="px-4 pt-4 pb-6 space-y-2">
-                            <a href="#" className="block px-4 py-3 rounded-xl bg-blue-50 dark:bg-blue-900/20 text-secondary font-bold">Home</a>
-                            <a href="#" className="block px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 font-medium hover:bg-gray-50 dark:hover:bg-gray-800">Company</a>
-                            <a href="#" className="block px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 font-medium hover:bg-gray-50 dark:hover:bg-gray-800">Products & Services</a>
-                            <a href="#" className="block px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 font-medium hover:bg-gray-50 dark:hover:bg-gray-800">Quality</a>
-                            <a href="#" className="block px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 font-medium hover:bg-gray-50 dark:hover:bg-gray-800">Contact</a>
+                            <a
+                                href="/"
+                                className={`block px-4 py-3 rounded-xl font-bold ${isActive('/') ? 'bg-blue-50 dark:bg-blue-900/20 text-secondary' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'}`}
+                            >
+                                Home
+                            </a>
+                            <a
+                                href="/about-us"
+                                className={`block px-4 py-3 rounded-xl font-bold ${isActive('/about-us') ? 'bg-blue-50 dark:bg-blue-900/20 text-secondary' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'}`}
+                            >
+                                About Us
+                            </a>
+                            <a href="#" className="block px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 font-medium hover:bg-gray-50 dark:hover:bg-gray-800">Services</a>
+                            <a
+                                href="/partnerships"
+                                className={`block px-4 py-3 rounded-xl font-bold ${isActive('/partnerships') ? 'bg-blue-50 dark:bg-blue-900/20 text-secondary' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'}`}
+                            >
+                                Our Partnerships
+                            </a>
                             <div className="pt-4 mt-2 border-t border-gray-100 dark:border-gray-800">
                                 <a href="#" className="block w-full text-center bg-secondary text-white px-6 py-3 rounded-xl font-bold">Get a Quote</a>
                             </div>

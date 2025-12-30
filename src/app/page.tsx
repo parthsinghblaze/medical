@@ -10,6 +10,7 @@ import WhoWeAre from '../components/WhoWeAre';
 import StatsSection from '../components/StatsSection';
 import TrustSection from '../components/TrustSection';
 import GlobalPresence from '../components/GlobalPresence';
+import Testimonials from '../components/Testimonials';
 
 export default function HomePage() {
     return (
@@ -23,6 +24,7 @@ export default function HomePage() {
             <GlobalPresence />
             <TrustSection />
             <Certifications />
+            <Testimonials />
             <Footer />
             <WhatsAppButton />
         </main>

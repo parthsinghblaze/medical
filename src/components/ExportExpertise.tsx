@@ -9,31 +9,36 @@ const features = [
         title: "Global Network",
         description: "We work with certified manufacturers from all over India, ensuring diverse and reliable sourcing.",
         icon: Globe,
-        className: "col-span-2"
+        className: "col-span-2",
+        color: "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
     },
     {
         title: "Regulatory Compliance",
         description: "Adherence to strict international standards (USFDA, EUGMP).",
         icon: FileCheck,
-        className: "col-span-1"
+        className: "col-span-1",
+        color: "bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400"
     },
     {
         title: "Wide Product Range",
         description: "From raw APIs to finished dosage formulations.",
         icon: Package,
-        className: "col-span-1"
+        className: "col-span-1",
+        color: "bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400"
     },
     {
         title: "Quality Control",
         description: "Rigorous testing for safety and efficacy.",
         icon: Badge,
-        className: "col-span-1"
+        className: "col-span-1",
+        color: "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400"
     },
     {
         title: "Fast Logistics",
         description: "Secure, temperature-controlled delivery.",
         icon: Truck,
-        className: "col-span-1"
+        className: "col-span-1",
+        color: "bg-cyan-100 text-cyan-600 dark:bg-cyan-900/30 dark:text-cyan-400"
     }
 ];
 
@@ -57,7 +62,7 @@ const FeatureCard = ({ feature, index }: { feature: any, index: number }) => {
             className={`bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-lg dark:hover:shadow-none transition-all duration-300 group flex flex-col justify-between ${feature.className || ''}`}
         >
             <div className="mb-4">
-                <div className="w-12 h-12 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary dark:text-blue-400 group-hover:scale-110 transition-transform duration-300">
+                <div className={`w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 ${feature.color}`}>
                     <feature.icon size={24} strokeWidth={1.5} />
                 </div>
             </div>

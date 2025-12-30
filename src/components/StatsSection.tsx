@@ -6,22 +6,26 @@ const stats = [
     {
         icon: Globe,
         number: "38+",
-        label: "Export markets in Asia, Africa, Europe, and Americas"
+        label: "Export markets in Asia, Africa, Europe, and Americas",
+        color: "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
     },
     {
         icon: FileCheck,
         number: "100%",
-        label: "Every product complies with international regulations and documentation requirements."
+        label: "Every product complies with international regulations and documentation requirements.",
+        color: "bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400"
     },
     {
         icon: Binoculars,
         number: "250+",
-        label: "Extensive collection of rare molecules, APIs, and FDFs."
+        label: "Extensive collection of rare molecules, APIs, and FDFs.",
+        color: "bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400"
     },
     {
         icon: Truck,
         number: "10+",
-        label: "Proven track record in international logistics and pharmaceutical procurement"
+        label: "Proven track record in international logistics and pharmaceutical procurement",
+        color: "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400"
     }
 ];
 
@@ -41,7 +45,7 @@ export default function StatsSection() {
                             whileHover={{ y: -5 }}
                             className="bg-white dark:bg-surface-dark/50 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-xl dark:hover:shadow-none transition-all duration-300 flex flex-col items-center text-center group h-full"
                         >
-                            <div className="mb-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-full text-secondary dark:text-blue-400 group-hover:scale-110 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/40 transition-all duration-300">
+                            <div className={`mb-6 p-4 rounded-full group-hover:scale-110 transition-all duration-300 ${stat.color}`}>
                                 <stat.icon size={32} strokeWidth={1.5} />
                             </div>
 
