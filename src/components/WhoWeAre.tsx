@@ -76,7 +76,7 @@ export default function WhoWeAre() {
 
                         <div className="mt-10">
                             <Link
-                                href="/about"
+                                href="/about-us"
                                 className="inline-block text-primary dark:text-blue-400 font-bold uppercase tracking-wider border-b-2 border-primary dark:border-blue-400 hover:text-secondary hover:border-secondary transition-colors pb-1"
                             >
                                 About Us

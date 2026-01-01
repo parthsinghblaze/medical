@@ -91,8 +91,8 @@ export default function Footer() {
                                 { name: 'About Us', href: '/about-us' },
                                 { name: 'Privacy Policy', href: '/privacy-policy' },
                                 { name: 'Terms & Conditions', href: '/terms-and-conditions' },
-                                { name: 'Contact Us', href: '#' },
-                                { name: 'FAQs', href: '#' }
+                                { name: 'Contact Us', href: '/contact-us' },
+                                { name: 'FAQs', href: '/faqs' }
                             ].map((item) => (
                                 <li key={item.name}>
                                     <Link href={item.href} className="flex items-center gap-2 hover:text-primary transition-colors hover:translate-x-1 duration-200">
