@@ -5,20 +5,20 @@ import ThreeScene from './ThreeScene'; // Adjust import path if needed
 
 export default function Hero() {
     return (
-        <section className="relative bg-[image:var(--image-hero-gradient)] dark:bg-[image:var(--image-hero-gradient-dark)] overflow-hidden min-h-[700px] flex items-center">
+        <section className="relative bg-[image:var(--image-hero-gradient)] dark:bg-[image:var(--image-hero-gradient-dark)] overflow-hidden min-h-[700px] md:min-h-[800px] flex flex-col md:flex-row items-center justify-center">
             {/* Background Gradients */}
             <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 to-blue-100/50 dark:from-slate-900 dark:to-slate-800 opacity-80 z-0"></div>
             <div className="absolute right-0 top-0 h-full w-full md:w-1/2 bg-gradient-to-l from-blue-200/20 to-transparent dark:from-blue-900/10 pointer-events-none"></div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pointer-events-none">
-                <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-12 h-full">
-
+            {/* Text Container - Same structure as original */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full pointer-events-none pt-24 md:pt-0">
+                <div className="flex flex-col md:flex-row items-center h-full">
                     {/* Text Content */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left pointer-events-auto mt-10 md:mt-0"
+                        className="w-full md:w-1/2 text-center md:text-left pointer-events-auto"
                     >
                         <motion.div
                             initial={{ opacity: 0, y: 10 }}
@@ -63,22 +63,21 @@ export default function Hero() {
                             </button>
                         </motion.div>
 
-
-
                     </motion.div>
-
                 </div>
             </div>
 
-            {/* 3D Scene - Positioned absolutely to take up full height/width on right without being constrained by max-w-7xl */}
+            {/* 3D Scene - Positioned absolutely for desktop, relative for mobile to follow text */}
             <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.2 }}
-                className="w-full md:w-[50vw] md:absolute md:right-0 md:top-0 md:h-full flex justify-center items-center h-[400px] relative z-0 pointer-events-auto overflow-hidden md:overflow-visible"
+                className="w-full md:w-[50vw] h-[450px] sm:h-[500px] md:h-full relative md:absolute md:right-0 md:top-0 z-10 flex items-center justify-center pointer-events-auto mt-4 md:mt-0"
             >
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent rounded-full filter blur-3xl opacity-30 transform scale-75 animate-pulse"></div>
-                <ThreeScene />
+                <div className="w-full h-full max-w-[450px] md:max-w-none aspect-square relative flex items-center justify-center">
+                    <ThreeScene />
+                </div>
             </motion.div>
 
             {/* Scroll Indicator */}
@@ -86,7 +85,7 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1 }}
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-400 dark:text-gray-500"
+                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-400 dark:text-gray-500 hidden md:block"
             >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />

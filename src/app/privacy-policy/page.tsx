@@ -54,7 +54,7 @@ export default function PrivacyPolicyPage() {
             title: "Data Protection & Security",
             content: (
                 <p>
-                    AksharAvira Pharma employs advanced technical and organizational security measures to protect your data against unauthorized access, accidental loss, or destruction. We use encryption, firewall protection, and restricted access protocols to ensure your sensitive information remains secure.
+                    Transcendence Pharma employs advanced technical and organizational security measures to protect your data against unauthorized access, accidental loss, or destruction. We use encryption, firewall protection, and restricted access protocols to ensure your sensitive information remains secure.
                 </p>
             )
         },
@@ -104,7 +104,7 @@ export default function PrivacyPolicyPage() {
             title: "Third-Party Links",
             content: (
                 <p>
-                    Our website may contain links to external sites that are not operated by AksharAvira Pharma. We are not responsible for the privacy practices or content of these third-party websites and encourage you to review their policies.
+                    Our website may contain links to external sites that are not operated by Transcendence Pharma. We are not responsible for the privacy practices or content of these third-party websites and encourage you to review their policies.
                 </p>
             )
         },
@@ -159,7 +159,7 @@ export default function PrivacyPolicyPage() {
                                 transition={{ delay: 0.2 }}
                                 className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
                             >
-                                At AksharAvira Pharma, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard the data of our website visitors, business partners, and customers.
+                                At Transcendence Pharma, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard the data of our website visitors, business partners, and customers.
                             </motion.p>
                         </div>
 

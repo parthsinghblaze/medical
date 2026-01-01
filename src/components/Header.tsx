@@ -51,30 +51,19 @@ export default function Header() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-24">
                         {/* Logo Area */}
-                        <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
-                            {/* Animated Logo Icon */}
-                            <div className="text-secondary dark:text-blue-400 relative h-10 w-10">
-                                <div className="absolute inset-0 bg-blue-100 dark:bg-blue-900/30 rounded-xl rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <svg fill="currentColor" height="28" viewBox="0 0 50 50" width="28" className="transform group-hover:scale-110 transition-transform duration-300">
-                                        <circle cx="25" cy="25" r="4"></circle>
-                                        <circle cx="25" cy="15" opacity="0.7" r="3"></circle>
-                                        <circle cx="25" cy="35" opacity="0.7" r="3"></circle>
-                                        <circle cx="15" cy="25" opacity="0.7" r="3"></circle>
-                                        <circle cx="35" cy="25" opacity="0.7" r="3"></circle>
-                                    </svg>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-col justify-center">
-                                <h1 className="text-2xl font-display font-bold text-gray-900 dark:text-white leading-none tracking-tight">
-                                    Akshar<span className="text-secondary dark:text-blue-400">Avira</span>
-                                </h1>
-                                <span className="text-[10px] text-gray-500 dark:text-gray-400 font-bold uppercase tracking-[0.25em] ml-0.5 mt-1">
-                                    Global Pharma
+                        <Link href="/" className="flex-shrink-0 flex flex-col justify-center cursor-pointer group no-underline">
+                            <h1 className="text-2xl sm:text-3xl font-questrial text-gray-900 dark:text-white leading-[0.9] tracking-tighter lowercase">
+                                transcendence
+                            </h1>
+                            <div className="flex gap-2 items-baseline mt-1">
+                                <span className="text-[10px] font-display font-bold uppercase tracking-wider text-gray-900 dark:text-white">
+                                    PHARMA
+                                </span>
+                                <span className="hidden sm:inline text-[9px] font-display font-light italic text-[#2acae4] whitespace-nowrap">
+                                    beyond ordinary limitations
                                 </span>
                             </div>
-                        </div>
+                        </Link>
 
                         {/* Desktop Menu */}
                         <div className="hidden lg:flex items-center space-x-10">

@@ -30,7 +30,7 @@ export default function WhoWeAre() {
                             <div className="relative h-full w-full rounded-full overflow-hidden border-8 border-white dark:border-surface-dark shadow-2xl">
                                 <Image
                                     src="/images/team.png"
-                                    alt="Aksharavira Healthcare Team"
+                                    alt="Transcendence Pharma Team"
                                     fill
                                     className="object-cover"
                                 />
@@ -55,7 +55,7 @@ export default function WhoWeAre() {
 
                         <div className="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                             <p>
-                                At Aksharavira, we are driven by a commitment to healthcare innovation and excellence.
+                                At Transcendence, we are driven by a commitment to healthcare innovation and excellence.
                                 Operating from our WHO-GMP certified facilities, we specialize in the production and global distribution of
                                 high-quality Finished Dosage Forms (FDF) and nutraceuticals. Our rigorous adherence to international standards
                                 ensures that every product plays a vital role in improving lives worldwide.

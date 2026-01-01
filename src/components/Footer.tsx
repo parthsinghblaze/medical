@@ -13,17 +13,22 @@ export default function Footer() {
                     {/* COLUMN 1: Company Info (35% approx -> span 4 or 5) */}
                     <div className="lg:col-span-5 space-y-6">
                         {/* Logo Area */}
-                        <Link href="/" className="flex items-center gap-2 group">
-                            <div className="bg-primary/10 p-2 rounded-full group-hover:bg-primary/20 transition-colors">
-                                <Pill className="text-primary w-8 h-8 rotate-45" />
+                        <Link href="/" className="flex flex-col justify-center cursor-pointer group no-underline">
+                            <h1 className="text-3xl font-questrial text-gray-900 dark:text-white leading-[0.9] tracking-tighter lowercase">
+                                transcendence
+                            </h1>
+                            <div className="flex gap-2 items-baseline mt-1">
+                                <span className="text-[10px] font-display font-bold uppercase tracking-wider text-gray-900 dark:text-white">
+                                    PHARMA
+                                </span>
+                                <span className="text-[9px] font-display font-light italic text-[#2acae4] whitespace-nowrap">
+                                    beyond ordinary limitations
+                                </span>
                             </div>
-                            <span className="text-2xl font-display font-bold text-gray-900 dark:text-white">
-                                AksharAvira <span className="text-primary">Pharma</span>
-                            </span>
                         </Link>
 
                         <p className="text-base leading-relaxed text-gray-600 dark:text-gray-400 max-w-sm">
-                            AksharAvira Pharma is a leading exporter of high-quality pharmaceutical products, committed to compliance, safety, and timely global distribution.
+                            Transcendence Pharma is a leading exporter of high-quality pharmaceutical products, committed to compliance, safety, and timely global distribution.
                         </p>
 
                         {/* Social Links (Optional but good for footer) */}
@@ -153,7 +158,7 @@ export default function Footer() {
                 {/* BOTTOM SECTION - Copyright */}
                 <div className="border-t border-gray-200 dark:border-gray-800 py-8 text-center">
                     <p className="text-gray-500 dark:text-gray-400 text-sm">
-                        © 2025, <Link href="/" className="text-primary hover:text-primary/80 font-bold transition-colors">AksharAvira Pharma</Link>, All rights reserved
+                        © 2025, <Link href="/" className="text-primary hover:text-primary/80 font-bold transition-colors">Transcendence Pharma</Link>, All rights reserved
                     </p>
                 </div>
 

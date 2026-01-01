@@ -17,7 +17,7 @@ export default function ManufacturingSection() {
 
                         <div className="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                             <p>
-                                At AksharAvira Pharma, we specialize in <span className="font-bold text-gray-900 dark:text-white">pharmaceutical manufacturing</span> and <span className="font-bold text-gray-900 dark:text-white">export solutions</span> under both our own and partner brand names.
+                                At Transcendence Pharma, we specialize in <span className="font-bold text-gray-900 dark:text-white">pharmaceutical manufacturing</span> and <span className="font-bold text-gray-900 dark:text-white">export solutions</span> under both our own and partner brand names.
                             </p>
                             <p>
                                 With a strong infrastructure and expertise in <span className="font-bold text-gray-900 dark:text-white">formulation development</span>, we ensure the highest standards of <span className="font-bold text-gray-900 dark:text-white">regulatory compliance, documentation, and international quality certifications</span>.

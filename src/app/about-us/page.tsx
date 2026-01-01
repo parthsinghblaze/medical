@@ -40,7 +40,7 @@ export default function AboutUsPage() {
                         {/* Left Column: Text */}
                         <div>
                             <h1 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-4">
-                                About AksharAvira Pharma
+                                About Transcendence Pharma
                             </h1>
                             <h2 className="text-xl md:text-2xl text-secondary dark:text-blue-400 font-medium mb-8 leading-relaxed font-display">
                                 Empowering Global Healthcare Through Quality Exports
@@ -48,11 +48,11 @@ export default function AboutUsPage() {
 
                             <div className="space-y-6 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
                                 <p>
-                                    <strong className="text-gray-900 dark:text-white font-bold">At AksharAvira Pharma</strong>,
+                                    <strong className="text-gray-900 dark:text-white font-bold">At Transcendence Pharma</strong>,
                                     we are committed to enhancing global health by ensuring the availability of high-quality finished dosage forms (FDF) and active pharmaceutical ingredients (APIs). Based in Surat, Gujarat, India, we specialize in exporting a wide range of pharmaceutical products to international markets. Our operations are driven by a deep understanding of the global pharmaceutical landscape, allowing us to bridge the gap between manufacturing excellence and healthcare needs worldwide.
                                 </p>
                                 <p>
-                                    Founded on the principles of quality and reliability, we work exclusively with <strong className="text-gray-900 dark:text-white font-bold">WHO-GMP certified facilities</strong> to ensure that every product we supply meets the highest international standards of safety and efficacy. Our strict regulatory compliance and advanced logistics network enable us to serve clients across <strong className="text-gray-900 dark:text-white font-bold">Asia, Africa, Europe, and the Americas</strong> with speed and precision. Whether it is sourcing rare molecules or delivering essential medicines, AksharAvira Pharma is your trusted partner in global healthcare.
+                                    Founded on the principles of quality and reliability, we work exclusively with <strong className="text-gray-900 dark:text-white font-bold">WHO-GMP certified facilities</strong> to ensure that every product we supply meets the highest international standards of safety and efficacy. Our strict regulatory compliance and advanced logistics network enable us to serve clients across <strong className="text-gray-900 dark:text-white font-bold">Asia, Africa, Europe, and the Americas</strong> with speed and precision. Whether it is sourcing rare molecules or delivering essential medicines, Transcendence Pharma is your trusted partner in global healthcare.
                                 </p>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ export default function AboutUsPage() {
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100 dark:border-gray-800 transform rotate-2 hover:rotate-0 transition-transform duration-500">
                                 <Image
                                     src="/images/team.png"
-                                    alt="AksharAvira Pharma Team and Facility"
+                                    alt="Transcendence Pharma Team and Facility"
                                     width={600}
                                     height={400}
                                     className="object-cover w-full h-full"

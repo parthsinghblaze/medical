@@ -29,7 +29,7 @@ export default function TermsAndConditionsPage() {
             title: "Acceptance of Terms",
             content: (
                 <p>
-                    By accessing and using the AksharAvira Pharma website, you acknowledge that you have read, understood, and agreed to be bound by these Terms & Conditions. If you do not agree with any part of these terms, you must refrain from using our website and services immediately.
+                    By accessing and using the Transcendence Pharma website, you acknowledge that you have read, understood, and agreed to be bound by these Terms & Conditions. If you do not agree with any part of these terms, you must refrain from using our website and services immediately.
                 </p>
             )
         },
@@ -37,7 +37,7 @@ export default function TermsAndConditionsPage() {
             title: "Company Information",
             content: (
                 <p>
-                    AksharAvira Pharma is a leading pharmaceutical export company specializing in the global distribution of high-quality Finished Dosage Forms (FDF), Active Pharmaceutical Ingredients (API), Reference Listed Drugs (RLD), and Nutraceuticals. Our operations are governed by international pharmaceutical standards and regulatory compliance protocols.
+                    Transcendence Pharma is a leading pharmaceutical export company specializing in the global distribution of high-quality Finished Dosage Forms (FDF), Active Pharmaceutical Ingredients (API), Reference Listed Drugs (RLD), and Nutraceuticals. Our operations are governed by international pharmaceutical standards and regulatory compliance protocols.
                 </p>
             )
         },
@@ -65,7 +65,7 @@ export default function TermsAndConditionsPage() {
             title: "Intellectual Property",
             content: (
                 <ul className="list-disc pl-6 space-y-2">
-                    <li>All content, including text, graphics, logos, and images, is the property of AksharAvira Pharma and is protected by international copyright laws.</li>
+                    <li>All content, including text, graphics, logos, and images, is the property of Transcendence Pharma and is protected by international copyright laws.</li>
                     <li>No part of this website may be reproduced, duplicated, or exploited for any commercial purpose without express written consent.</li>
                 </ul>
             )
@@ -84,7 +84,7 @@ export default function TermsAndConditionsPage() {
             title: "Limitation of Liability",
             content: (
                 <ul className="list-disc pl-6 space-y-2">
-                    <li>AksharAvira Pharma shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website or products.</li>
+                    <li>Transcendence Pharma shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website or products.</li>
                     <li>We do not guarantee that the website will be error-free or uninterrupted at all times.</li>
                 </ul>
             )
@@ -102,7 +102,7 @@ export default function TermsAndConditionsPage() {
             title: "Third-Party Links",
             content: (
                 <p>
-                    This website may contain links to third-party sites for your convenience. AksharAvira Pharma does not endorse or take responsibility for the content, privacy policies, or practices of any third-party websites. Use of such links is at your own risk.
+                    This website may contain links to third-party sites for your convenience. Transcendence Pharma does not endorse or take responsibility for the content, privacy policies, or practices of any third-party websites. Use of such links is at your own risk.
                 </p>
             )
         },
@@ -165,7 +165,7 @@ export default function TermsAndConditionsPage() {
                                 transition={{ delay: 0.2 }}
                                 className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
                             >
-                                Welcome to AksharAvira Pharma. By accessing our website and using our services, you agree to the following terms and conditions. Please read them carefully before proceeding.
+                                Welcome to Transcendence Pharma. By accessing our website and using our services, you agree to the following terms and conditions. Please read them carefully before proceeding.
                             </motion.p>
                         </div>
 

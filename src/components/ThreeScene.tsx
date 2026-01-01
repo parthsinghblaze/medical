@@ -73,7 +73,7 @@ export default function ThreeScene() {
     }, [theme]);
 
     return (
-        <div className="w-full h-full min-h-[500px] flex items-center justify-center relative transition-opacity duration-1000 ease-in-out">
+        <div className="w-full h-full min-h-[300px] md:min-h-[500px] flex items-center justify-center relative transition-opacity duration-1000 ease-in-out">
             <div className="absolute inset-0 bg-gradient-to-t from-background-light via-transparent to-transparent dark:from-background-dark z-10 opacity-20 pointer-events-none" />
             <canvas
                 ref={canvasRef}

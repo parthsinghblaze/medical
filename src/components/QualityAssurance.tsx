@@ -14,12 +14,12 @@ export default function QualityAssurance() {
                             Learn How We Ensure Quality & Compliance
                         </span>
                         <h2 className="text-3xl md:text-5xl font-display font-bold text-primary dark:text-white leading-tight">
-                            AksharAvira Pharma provides global-standard pharmaceutical solutions.
+                            Transcendence Pharma provides global-standard pharmaceutical solutions.
                         </h2>
                     </div>
                     <div className="max-w-lg">
                         <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-left lg:text-right">
-                            At AksharAvira, we prioritize international compliance, stringent safety protocols, and seamless global logistics. Our facilities and processes are designed to meet WHO-GMP and FDA export requirements, ensuring our clients receive only the highest-quality pharmaceutical products.
+                            At Transcendence, we prioritize international compliance, stringent safety protocols, and seamless global logistics. Our facilities and processes are designed to meet WHO-GMP and FDA export requirements, ensuring our clients receive only the highest-quality pharmaceutical products.
                         </p>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ export default function QualityAssurance() {
                         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
 
                         <h3 className="text-2xl lg:text-3xl font-bold mb-8 relative z-10">
-                            AksharAvira Quality Assurance Protocol
+                            Transcendence Quality Assurance Protocol
                         </h3>
 
                         {/* Checklist */}
