@@ -14,7 +14,7 @@ export default function Footer() {
                     <div className="lg:col-span-5 space-y-6">
                         {/* Logo Area */}
                         <Link href="/" className="flex flex-col justify-center cursor-pointer group no-underline">
-                            <h1 className="text-3xl font-questrial text-gray-900 dark:text-white leading-[0.9] tracking-tighter lowercase">
+                            <h1 className="text-3xl text-gray-900 dark:text-white leading-[0.9] tracking-tighter lowercase">
                                 transcendence
                             </h1>
                             <div className="flex gap-2 items-baseline mt-1">

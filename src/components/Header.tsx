@@ -52,7 +52,7 @@ export default function Header() {
                     <div className="flex justify-between items-center h-24">
                         {/* Logo Area */}
                         <Link href="/" className="flex-shrink-0 flex flex-col justify-center cursor-pointer group no-underline">
-                            <h1 className="text-2xl sm:text-3xl font-questrial text-gray-900 dark:text-white leading-[0.9] tracking-tighter lowercase">
+                            <h1 className="text-2xl sm:text-3xl text-gray-900 dark:text-white leading-[0.9] tracking-tighter lowercase">
                                 transcendence
                             </h1>
                             <div className="flex gap-2 items-baseline mt-1">

@@ -19,6 +19,7 @@
   --font-sans: var(--font-inter);
   --font-display: var(--font-montserrat);
   --font-questrial: var(--font-questrial);
+  --font-chakra: var(--font-chakra-petch);
 }
 
 @utility font-display {
@@ -27,6 +28,10 @@
 
 @utility font-questrial {
   font-family: var(--font-questrial);
+}
+
+@utility font-chakra {
+  font-family: var(--font-chakra);
 }
 
 :root {
@@ -47,4 +52,13 @@ body {
 .dark body {
   background: var(--color-background-dark);
   color: var(--color-text-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-chakra);
 }
