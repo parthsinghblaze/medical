@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import { Microscope, Atom, ShieldCheck, CheckCircle } from 'lucide-react';
 
+import CountUp from 'react-countup';
+
 export default function ValueProposition() {
     return (
         <section className="py-20 bg-gray-50 dark:bg-surface-dark/30 overflow-hidden relative">
@@ -85,7 +87,9 @@ export default function ValueProposition() {
                             <div className="absolute bottom-10 -left-10 lg:-left-12 bg-white dark:bg-surface-dark p-2 rounded-[2rem] shadow-xl animate-bounce-slow">
                                 <div className="bg-teal-600 dark:bg-teal-500 text-white w-32 h-32 lg:w-40 lg:h-40 flex flex-col items-center justify-center text-center p-4"
                                     style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }}>
-                                    <span className="text-4xl font-bold block leading-none mb-1">10</span>
+                                    <span className="text-4xl font-bold block leading-none mb-1">
+                                        <CountUp end={10} duration={2.5} enableScrollSpy scrollSpyOnce />
+                                    </span>
                                     <span className="text-sm font-bold uppercase tracking-wider opacity-90">Years<br />Experience</span>
                                 </div>
                             </div>

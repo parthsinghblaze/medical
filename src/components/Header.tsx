@@ -59,7 +59,7 @@ export default function Header() {
                                 <span className="text-[10px] font-display font-bold uppercase tracking-wider text-gray-900 dark:text-white">
                                     PHARMA
                                 </span>
-                                <span className="hidden sm:inline text-[9px] font-display font-light italic text-[#2acae4] whitespace-nowrap">
+                                <span className="text-[9px] font-display font-light italic text-[#2acae4] whitespace-nowrap">
                                     beyond ordinary limitations
                                 </span>
                             </div>
@@ -93,12 +93,12 @@ export default function Header() {
                         <div className="hidden lg:flex items-center gap-5">
                             <div className="h-6 w-px bg-gray-200 dark:bg-gray-700"></div>
                             <ModeToggle />
-                            <a href="/contact-us" className="bg-secondary hover:bg-blue-700 text-white px-7 py-3 rounded-full font-bold text-sm transition-all shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 flex items-center gap-2 group">
+                            <Link href="/contact-us" className="bg-secondary hover:bg-blue-700 text-white px-7 py-3 rounded-full font-bold text-sm transition-all shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 flex items-center gap-2 group">
                                 Get Quote
                                 <span className="bg-white/20 rounded-full p-0.5 group-hover:translate-x-1 transition-transform">
                                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Mobile Menu Button */}
@@ -121,18 +121,18 @@ export default function Header() {
                 {isMobileMenuOpen && (
                     <div className="lg:hidden bg-white dark:bg-background-dark border-t border-gray-100 dark:border-gray-800 absolute w-full shadow-xl">
                         <div className="px-4 pt-4 pb-6 space-y-2">
-                            <a
+                            <Link
                                 href="/"
                                 className={`block px-4 py-3 rounded-xl font-bold ${isActive('/') ? 'bg-blue-50 dark:bg-blue-900/20 text-secondary' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'}`}
                             >
                                 Home
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="/about-us"
                                 className={`block px-4 py-3 rounded-xl font-bold ${isActive('/about-us') ? 'bg-blue-50 dark:bg-blue-900/20 text-secondary' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'}`}
                             >
                                 About Us
-                            </a>
+                            </Link>
                             <div>
                                 <button
                                     onClick={() => setIsServicesOpen(!isServicesOpen)}
@@ -174,20 +174,20 @@ export default function Header() {
                                     </div>
                                 )}
                             </div>
-                            <a
+                            <Link
                                 href="/partnerships"
                                 className={`block px-4 py-3 rounded-xl font-bold ${isActive('/partnerships') ? 'bg-blue-50 dark:bg-blue-900/20 text-secondary' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'}`}
                             >
                                 Our Partnerships
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="/contact-us"
                                 className={`block px-4 py-3 rounded-xl font-bold ${isActive('/contact-us') ? 'bg-blue-50 dark:bg-blue-900/20 text-secondary' : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'}`}
                             >
                                 Contact Us
-                            </a>
+                            </Link>
                             <div className="pt-4 mt-2 border-t border-gray-100 dark:border-gray-800">
-                                <a href="/contact-us" className="block w-full text-center bg-secondary text-white px-6 py-3 rounded-xl font-bold">Get a Quote</a>
+                                <Link href="/contact-us" className="block w-full text-center bg-secondary text-white px-6 py-3 rounded-xl font-bold">Get a Quote</Link>
                             </div>
                         </div>
                     </div>

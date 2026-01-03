@@ -1,25 +1,30 @@
 'use client';
 
 import Image from 'next/image';
+import CountUp from 'react-countup';
 
 const achievements = [
     {
-        number: "38+",
+        value: 38,
+        suffix: "+",
         label: "Countries Served",
         description: "Delivering pharmaceutical products across five continents, ensuring health access worldwide."
     },
     {
-        number: "250+",
+        value: 250,
+        suffix: "+",
         label: "Pharmaceutical Products",
         description: "Our extensive product line includes FDF and APIs."
     },
     {
-        number: "100+",
+        value: 100,
+        suffix: "+",
         label: "Global Partners",
         description: "Trusted by importers, hospitals, labs and healthcare providers globally for timely, high-quality supply"
     },
     {
-        number: "99%",
+        value: 99,
+        suffix: "%",
         label: "Customer Satisfaction",
         description: "Consistently rated top-tier by partners for quality, reliability, and compliance."
     }
@@ -59,7 +64,7 @@ export default function AboutAchievements() {
                         <div key={index} className="flex flex-col items-center text-center group">
                             <div className="mb-4 relative">
                                 <span className="text-5xl lg:text-6xl font-display font-bold text-teal-600 dark:text-teal-400 opacity-90 group-hover:scale-110 transition-transform duration-300 block">
-                                    {stat.number}
+                                    <CountUp end={stat.value} duration={2.5} suffix={stat.suffix} enableScrollSpy scrollSpyOnce />
                                 </span>
                                 {/* Decorative underline */}
                                 <div className="h-1 w-12 bg-teal-200 dark:bg-teal-800 mx-auto mt-2 rounded-full"></div>

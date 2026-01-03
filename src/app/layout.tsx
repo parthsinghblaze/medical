@@ -40,7 +40,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className={`${inter.variable} ${montserrat.variable} ${questrial.variable} ${chakraPetch.variable}`} suppressHydrationWarning>
-            <body className="font-sans antialiased text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark transition-colors duration-300">
+            <body className="font-sans antialiased text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark transition-colors duration-300 overflow-x-hidden">
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="light"
