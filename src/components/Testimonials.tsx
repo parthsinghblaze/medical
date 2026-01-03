@@ -1,5 +1,5 @@
 'use client';
-import React, { useCallback } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
@@ -37,6 +37,23 @@ const testimonials = [
 
 export default function Testimonials() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' }, [Autoplay({ delay: 5000, stopOnInteraction: true })]);
+    const [selectedIndex, setSelectedIndex] = useState(0);
+    const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+
+    const scrollTo = useCallback((index: number) => emblaApi && emblaApi.scrollTo(index), [emblaApi]);
+
+    const onSelect = useCallback(() => {
+        if (!emblaApi) return;
+        setSelectedIndex(emblaApi.selectedScrollSnap());
+    }, [emblaApi]);
+
+    useEffect(() => {
+        if (!emblaApi) return;
+        onSelect();
+        setScrollSnaps(emblaApi.scrollSnapList());
+        emblaApi.on('select', onSelect);
+        emblaApi.on('reInit', onSelect);
+    }, [emblaApi, onSelect]);
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev();
@@ -97,51 +114,52 @@ export default function Testimonials() {
                     </div>
 
                     {/* RIGHT SLIDER SECTION - Embla Carousel */}
-                    <div className="w-full lg:w-2/3 overflow-hidden" ref={emblaRef}>
-                        <div className="flex -ml-6">
-                            {testimonials.map((testimonial) => (
-                                <div
-                                    key={testimonial.id}
-                                    className="relative flex-[0_0_100%] md:flex-[0_0_50%] min-w-0 pl-6"
-                                >
-                                    <div className="bg-white dark:bg-surface-light rounded-2xl p-8 shadow-xl select-none transition-transform duration-300 h-full">
-                                        <div className="absolute top-8 right-8 text-yellow-400 flex gap-1">
-                                            {[...Array(testimonial.rating)].map((_, i) => (
-                                                <Star key={i} size={16} fill="currentColor" />
-                                            ))}
-                                        </div>
+                    <div className="w-full lg:w-2/3 flex flex-col gap-8">
+                        <div className="overflow-hidden" ref={emblaRef}>
+                            <div className="flex -ml-6">
+                                {testimonials.map((testimonial) => (
+                                    <div
+                                        key={testimonial.id}
+                                        className="relative flex-[0_0_100%] md:flex-[0_0_50%] min-w-0 pl-6"
+                                    >
+                                        <div className="bg-white dark:bg-surface-light rounded-2xl p-8 shadow-xl select-none transition-transform duration-300 h-full">
+                                            <div className="absolute top-8 right-8 text-yellow-400 flex gap-1">
+                                                {[...Array(testimonial.rating)].map((_, i) => (
+                                                    <Star key={i} size={16} fill="currentColor" />
+                                                ))}
+                                            </div>
 
-                                        <div className="mb-6">
-                                            <h4 className="text-xl font-bold text-gray-900 dark:text-gray-900">{testimonial.name}</h4>
-                                            <p className="text-sm font-bold text-blue-600 uppercase tracking-wider mt-1">{testimonial.location}</p>
-                                        </div>
+                                            <div className="mb-6">
+                                                <h4 className="text-xl font-bold text-gray-900 dark:text-gray-900">{testimonial.name}</h4>
+                                                <p className="text-sm font-bold text-blue-600 uppercase tracking-wider mt-1">{testimonial.location}</p>
+                                            </div>
 
-                                        <div className="relative">
-                                            <Quote size={40} className="absolute -top-4 -left-2 text-gray-100 dark:text-gray-200 -z-10" />
-                                            <p className="text-gray-600 dark:text-gray-600 leading-relaxed relative z-10 pointer-events-none">
-                                                "{testimonial.text}"
-                                            </p>
+                                            <div className="relative">
+                                                <Quote size={40} className="absolute -top-4 -left-2 text-gray-100 dark:text-gray-200 -z-10" />
+                                                <p className="text-gray-600 dark:text-gray-600 leading-relaxed relative z-10 pointer-events-none">
+                                                    "{testimonial.text}"
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Pagination Dots */}
+                        <div className="flex justify-center gap-3">
+                            {scrollSnaps.map((_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => scrollTo(index)}
+                                    className={`w-3 h-3 rounded-full transition-all duration-300 ${index === selectedIndex
+                                        ? 'bg-white scale-125'
+                                        : 'bg-white/30 hover:bg-white/50'
+                                        }`}
+                                    aria-label={`Go to slide ${index + 1}`}
+                                />
                             ))}
                         </div>
-                    </div>
-
-                    {/* Mobile Navigation (Visible only on small screens) */}
-                    <div className="flex lg:hidden items-center justify-center gap-4 mt-2 w-full">
-                        <button
-                            onClick={scrollPrev}
-                            className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 text-white"
-                        >
-                            <ChevronLeft size={20} />
-                        </button>
-                        <button
-                            onClick={scrollNext}
-                            className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 text-white"
-                        >
-                            <ChevronRight size={20} />
-                        </button>
                     </div>
 
                 </div>

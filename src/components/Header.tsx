@@ -22,9 +22,9 @@ export default function Header() {
                             <span className="w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse"></span>
                             Global Operations: 24/7 Support
                         </span>
-                        <a href="mailto:sales@aksharavira.com" className="flex items-center hover:text-white transition-colors">
+                        <a href="mailto:sales@transcendence.com" className="flex items-center hover:text-white transition-colors">
                             <Mail size={14} className="mr-2" />
-                            sales@aksharavira.com
+                            sales@transcendence.com
                         </a>
                     </div>
                     <div className="flex items-center space-x-4 w-full md:w-auto justify-between md:justify-end">
@@ -35,8 +35,7 @@ export default function Header() {
                         </a>
 
                         <div className="flex items-center space-x-4">
-                            <a href="#" className="hidden md:flex hover:text-secondary transition-colors">Careers</a>
-                            <span className="hidden md:block text-gray-600">|</span>
+
                             {/* Language Selector */}
                             <button className="flex items-center hover:text-white transition-colors gap-1">
                                 <span className="uppercase">EN</span>

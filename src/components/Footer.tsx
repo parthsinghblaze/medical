@@ -133,8 +133,8 @@ export default function Footer() {
                             </div>
                             <div>
                                 <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-1">Email Us</p>
-                                <a href="mailto:sales@aksharavira.com" className="text-lg font-bold text-gray-900 dark:text-white hover:text-amber-600 transition-colors">
-                                    sales@aksharavira.com
+                                <a href="mailto:sales@transcendence.com" className="text-lg font-bold text-gray-900 dark:text-white hover:text-amber-600 transition-colors">
+                                    sales@transcendence.com
                                 </a>
                             </div>
                         </div>
