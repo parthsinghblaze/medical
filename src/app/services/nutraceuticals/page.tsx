@@ -67,10 +67,10 @@ export default function NutraceuticalsPage() {
                         <Breadcrumb />
 
                         <div className="max-w-2xl">
-                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
+                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white">
                                 Nutraceutical <br /> Solutions
                             </h1>
-                            <p className="text-xl text-blue-100 leading-relaxed mb-4">
+                            <p className="text-xl text-blue-100/80 leading-relaxed mb-4">
                                 Crafting high-impact health and wellness supplements with scientific precision and natural purity.
                             </p>
                         </div>
@@ -93,11 +93,11 @@ export default function NutraceuticalsPage() {
 
                             {/* Right: Content & 4 Icons */}
                             <div>
-                                <h2 className="text-3xl font-display font-bold text-primary dark:text-white mb-6">
-                                    AksharAvira Pharma – Your Trusted Nutraceutical Partner
+                                <h2 className="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">
+                                    Transcendence Pharma – Your Trusted Nutraceutical Partner
                                 </h2>
-                                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
-                                    At AksharAvira Pharma, we don't just manufacture nutraceuticals—we craft health solutions that people trust. With state-of-the-art facilities, rigorous quality control, and a passion for wellness, we help brands bring high-impact supplements to life.
+                                <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
+                                    At Transcendence Pharma, we don't just manufacture nutraceuticals—we craft health solutions that people trust. With state-of-the-art facilities, rigorous quality control, and a passion for wellness, we help brands bring high-impact supplements to life.
                                 </p>
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">

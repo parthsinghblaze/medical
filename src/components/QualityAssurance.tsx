@@ -10,15 +10,15 @@ export default function QualityAssurance() {
                 {/* TOP SECTION */}
                 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10 mb-16">
                     <div className="max-w-2xl">
-                        <span className="block text-secondary dark:text-blue-400 font-bold uppercase tracking-wider text-sm mb-3">
+                        <span className="text-secondary dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-3 block">
                             Learn How We Ensure Quality & Compliance
                         </span>
-                        <h2 className="text-3xl md:text-5xl font-display font-bold text-primary dark:text-white leading-tight">
+                        <h2 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white leading-tight">
                             Transcendence Pharma provides global-standard pharmaceutical solutions.
                         </h2>
                     </div>
                     <div className="max-w-lg">
-                        <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed text-left lg:text-right">
+                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed text-left lg:text-right">
                             At Transcendence, we prioritize international compliance, stringent safety protocols, and seamless global logistics. Our facilities and processes are designed to meet WHO-GMP and FDA export requirements, ensuring our clients receive only the highest-quality pharmaceutical products.
                         </p>
                     </div>

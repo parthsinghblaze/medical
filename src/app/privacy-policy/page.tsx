@@ -123,8 +123,8 @@ export default function PrivacyPolicyPage() {
                     <p>If you have any questions or concerns regarding this Privacy Policy or our data practices, please contact our Data Protection Officer at:</p>
                     <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-100 dark:border-blue-800/50 inline-block">
                         <p className="font-bold text-primary dark:text-blue-300 mb-1">Email:</p>
-                        <a href="mailto:info@aksharavirapharma.com" className="text-secondary hover:underline text-lg font-medium">
-                            info@aksharavirapharma.com
+                        <a href="mailto:info@transcendencepharma.com" className="text-secondary hover:underline text-lg font-medium">
+                            info@transcendencepharma.com
                         </a>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ export default function PrivacyPolicyPage() {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.2 }}
-                                className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                                className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
                             >
                                 At Transcendence Pharma, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard the data of our website visitors, business partners, and customers.
                             </motion.p>

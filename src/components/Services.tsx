@@ -28,9 +28,9 @@ export default function Services() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h3 className="text-secondary dark:text-blue-400 font-semibold tracking-wide uppercase text-sm mb-3">
+                    <span className="text-secondary dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-3 block">
                         Expertise & Capabilities
-                    </h3>
+                    </span>
                     <h2 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white">
                         Services
                     </h2>

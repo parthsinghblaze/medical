@@ -39,14 +39,14 @@ export default function AboutUsPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
                         {/* Left Column: Text */}
                         <div>
-                            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-4">
+                            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-6">
                                 About Transcendence Pharma
                             </h1>
-                            <h2 className="text-xl md:text-2xl text-secondary dark:text-blue-400 font-medium mb-8 leading-relaxed font-display">
+                            <h2 className="text-xl md:text-2xl text-secondary dark:text-blue-400 font-semibold mb-8 leading-relaxed font-display">
                                 Empowering Global Healthcare Through Quality Exports
                             </h2>
 
-                            <div className="space-y-6 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                            <div className="space-y-6 text-lg leading-relaxed text-gray-600 dark:text-gray-400">
                                 <p>
                                     <strong className="text-gray-900 dark:text-white font-bold">At Transcendence Pharma</strong>,
                                     we are committed to enhancing global health by ensuring the availability of high-quality finished dosage forms (FDF) and active pharmaceutical ingredients (APIs). Based in Surat, Gujarat, India, we specialize in exporting a wide range of pharmaceutical products to international markets. Our operations are driven by a deep understanding of the global pharmaceutical landscape, allowing us to bridge the gap between manufacturing excellence and healthcare needs worldwide.

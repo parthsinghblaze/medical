@@ -155,7 +155,7 @@ export default function FAQSection() {
                                             </div>
                                             <div>
                                                 <p className="text-xs text-blue-200/60 uppercase font-bold tracking-wider">Email Us</p>
-                                                <a href="mailto:sales@aksharavira.com" className="text-lg font-bold hover:text-secondary transition-colors">sales@aksharavira.com</a>
+                                                <a href="mailto:info@transcendencepharma.com" className="text-lg font-bold hover:text-secondary transition-colors">info@transcendencepharma.com</a>
                                             </div>
                                         </div>
 

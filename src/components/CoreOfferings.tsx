@@ -65,14 +65,14 @@ export default function CoreOfferings() {
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
                     >
-                        <h3 className="text-secondary dark:text-blue-400 font-semibold tracking-wide uppercase text-sm mb-4">
+                        <span className="text-secondary dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-3 block">
                             High-Quality Pharma Export Services
-                        </h3>
+                        </span>
                         <h2 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-6">
                             Our Core Offerings
                         </h2>
                         <div className="w-24 h-1.5 bg-accent mx-auto rounded-full mb-8"></div>
-                        <p className="max-w-3xl mx-auto text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                        <p className="max-w-3xl mx-auto text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
                             We specialize in sourcing, manufacturing, and exporting a wide range of pharmaceutical products,
                             and excipients, serving distributors, hospitals, labs, and production units worldwide.
                         </p>

@@ -39,7 +39,7 @@ export default function TrustSection() {
                                     View Our Services
                                 </Link>
                                 <Link
-                                    href="/contact"
+                                    href="/contact-us"
                                     className="inline-flex items-center px-8 py-3.5 text-base font-bold text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-full transition-all"
                                 >
                                     Request a Quote

@@ -82,12 +82,11 @@ export default function Certifications() {
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
                         >
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/50 dark:bg-blue-900/30 text-primary dark:text-blue-400 text-xs font-bold uppercase tracking-wider mb-6">
-                                <Award size={14} />
-                                <span>Global Standards</span>
-                            </div>
+                            <span className="text-secondary dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-3 block">
+                                Global Standards
+                            </span>
 
-                            <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 dark:text-white mb-6 leading-[1.15]">
+                            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-6 leading-[1.15]">
                                 Delivering <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Excellence</span> <br />
                                 in Supply

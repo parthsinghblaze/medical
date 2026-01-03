@@ -17,7 +17,7 @@ const testimonials = [
         name: "Lee Rimba",
         location: "South Korea",
         rating: 5,
-        text: "I want to express my gratitude for the high-quality products. Your responses were very patient and detailed. We are extremely pleased with the treatment we received and look forward to placing future orders with AksharAvira."
+        text: "I want to express my gratitude for the high-quality products. Your responses were very patient and detailed. We are extremely pleased with the treatment we received and look forward to placing future orders with Transcendence Pharma."
     },
     {
         id: 3,
@@ -65,14 +65,14 @@ export default function Testimonials() {
                     {/* LEFT HEADER SECTION */}
                     <div className="w-full lg:w-1/3 text-white">
                         <div>
-                            <span className="block text-blue-200 font-semibold tracking-wide uppercase text-sm mb-4">
+                            <span className="text-blue-200 font-bold text-sm uppercase tracking-widest mb-4 block">
                                 Trusted by Clients Worldwide
                             </span>
-                            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 leading-tight">
+                            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
                                 What Our Clients Say About Us
                             </h2>
-                            <p className="text-blue-100 text-lg leading-relaxed mb-8">
-                                AksharAvira Pharma stands as a beacon of excellence in the pharmaceutical industry.
+                            <p className="text-blue-100/80 text-lg leading-relaxed mb-8">
+                                Transcendence Pharma stands as a beacon of excellence in the pharmaceutical industry.
                                 Our dedication to quality standards and customer satisfaction has earned us the trust of partners across the globe.
                             </p>
 

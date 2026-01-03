@@ -44,10 +44,10 @@ export default function FinishedDosageFormsPage() {
                         <Breadcrumb />
 
                         <div className="max-w-3xl">
-                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-                                Finished Dosage Forms <span className="text-secondary">(FDF)</span>
+                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white">
+                                Finished Dosage Forms <span className="text-secondary dark:text-blue-400">(FDF)</span>
                             </h1>
-                            <p className="text-xl text-blue-100 leading-relaxed mb-10">
+                            <p className="text-xl text-blue-100/80 leading-relaxed mb-10">
                                 High-quality, WHO-GMP certified finished formulations ready for global markets. We ensure therapeutic efficacy and regulatory compliance across all dosage forms.
                             </p>
                         </div>
@@ -59,10 +59,10 @@ export default function FinishedDosageFormsPage() {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                             <div>
-                                <h2 className="text-3xl font-display font-bold text-primary dark:text-white mb-6">
+                                <h2 className="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">
                                     Quality-Driven Formulation Excellence
                                 </h2>
-                                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
+                                <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
                                     Our Finished Dosage Forms are manufactured in state-of-the-art WHO-GMP certified facilities. We specialize in providing a comprehensive range of medications across multiple therapeutic categories including Anti-Infective, Cardiovascular, Gastrointestinal, and more.
                                 </p>
                                 <div className="grid grid-cols-2 gap-6">

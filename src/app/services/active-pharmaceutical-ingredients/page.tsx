@@ -43,10 +43,10 @@ export default function ActivePharmaceuticalIngredientsPage() {
                         <Breadcrumb />
 
                         <div className="max-w-3xl">
-                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-                                Active Pharmaceutical <br /> Ingredients <span className="text-secondary">(APIs)</span>
+                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white">
+                                Active Pharmaceutical <br /> Ingredients <span className="text-secondary dark:text-blue-400">(APIs)</span>
                             </h1>
-                            <p className="text-xl text-blue-100 leading-relaxed mb-10">
+                            <p className="text-xl text-blue-100/80 leading-relaxed mb-10">
                                 High-purity, stable, and compliant active ingredients that form the core of effective healthcare. Our API sourcing and supply chain ensure consistency and safety for pharmaceutical manufacturing.
                             </p>
                         </div>
@@ -65,10 +65,10 @@ export default function ActivePharmaceuticalIngredientsPage() {
                                 </div>
                             </div>
                             <div className="order-1 lg:order-2">
-                                <h2 className="text-3xl font-display font-bold text-primary dark:text-white mb-6">
+                                <h2 className="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">
                                     The Foundation of Quality Medicine
                                 </h2>
-                                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
+                                <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
                                     We provide a wide array of high-quality Active Pharmaceutical Ingredients (APIs) sourced from GMP-compliant manufacturers. Our commitment to purity and stability ensures that your finished formulations maintain their intended efficacy and safety profiles.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

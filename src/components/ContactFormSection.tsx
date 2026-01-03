@@ -15,10 +15,10 @@ export default function ContactFormSection() {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <span className="text-gray-500 dark:text-gray-400 font-bold text-xs uppercase tracking-[0.2em] mb-3 block">
-                        GET ENQUIRE
+                    <span className="text-secondary dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-3 block">
+                        Get In Touch
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#2acae4] mb-4">
+                    <h2 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-4">
                         Drop Us A Line
                     </h2>
                 </div>

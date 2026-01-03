@@ -22,22 +22,22 @@ export default function GlobalPresence() {
                         viewport={{ once: true }}
                         className="w-full lg:w-[40%]"
                     >
-                        <span className="block text-secondary dark:text-blue-400 font-semibold tracking-wide uppercase text-sm mb-3">
+                        <span className="text-secondary dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-3 block">
                             Our Approach
                         </span>
                         <h2 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-6">
                             Our Global Presence
                         </h2>
-                        <p className="text-gray-600 dark:text-gray-300 text-lg leading-loose mb-10">
-                            Aksharavira reaches beyond borders, connecting communities across continents.
+                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-10">
+                            Transcendence Pharma reaches beyond borders, connecting communities across continents.
                             Our diverse teams work seamlessly across time zones to deliver quality, innovation,
                             and care. With a strong foothold in key regions, we are committed to making a
                             positive impact on global health, ensuring that essential medicines are accessible to all.
                         </p>
 
                         <Link
-                            href="/contact"
-                            className="inline-flex items-center justify-center px-8 py-3 text-sm font-bold text-white bg-primary rounded-full shadow-lg hover:bg-primary/90 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 dark:bg-blue-600 dark:hover:bg-blue-500"
+                            href="/contact-us"
+                            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-primary rounded-full shadow-lg hover:bg-primary/90 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 dark:bg-blue-600 dark:hover:bg-blue-500"
                         >
                             Contact Us
                         </Link>

@@ -44,9 +44,12 @@ export default function AboutAchievements() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 {/* Section Heading */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white leading-tight">
+                    <span className="text-secondary dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-3 block">
+                        Our Global Impact
+                    </span>
+                    <h2 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white leading-tight">
                         Our Achievements Are Built on <br className="hidden md:block" />
-                        <span className="text-teal-600 dark:text-teal-400">Client Trust & Global Reach</span>
+                        <span className="text-secondary dark:text-blue-400">Client Trust & Global Reach</span>
                     </h2>
                 </div>
 

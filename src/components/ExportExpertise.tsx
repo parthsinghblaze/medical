@@ -105,13 +105,13 @@ export default function ExportExpertise() {
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}
                         >
-                            <span className="block text-secondary dark:text-blue-400 font-semibold tracking-wide uppercase text-sm mb-3">
+                            <span className="text-secondary dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-3 block">
                                 Trusted Export Partner For
                             </span>
                             <h2 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-6 leading-tight">
                                 Finished Dosage Form <span className="text-blue-600 dark:text-blue-400">&</span> APIs
                             </h2>
-                            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-10">
+                            <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-10">
                                 We specialize in the global export of high-quality pharmaceutical APIs, finished dosage forms, and nutraceuticals.
                                 Our dedicated team ensures seamless logistics, strict quality control, and complete regulatory compliance for every shipment.
                             </p>

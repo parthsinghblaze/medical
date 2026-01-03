@@ -53,7 +53,7 @@ export default function WhoWeAre() {
                             Who We Are
                         </h2>
 
-                        <div className="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                        <div className="space-y-6 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
                             <p>
                                 At Transcendence, we are driven by a commitment to healthcare innovation and excellence.
                                 Operating from our WHO-GMP certified facilities, we specialize in the production and global distribution of

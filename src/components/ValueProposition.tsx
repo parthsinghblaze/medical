@@ -12,14 +12,14 @@ export default function ValueProposition() {
                     <div className="w-full lg:w-3/5">
                         {/* Top Section */}
                         <div className="mb-12">
-                            <span className="inline-block py-1 px-3 rounded-full bg-teal-50 dark:bg-teal-900/20 text-teal-600 dark:text-teal-400 font-bold text-xs uppercase tracking-wider mb-4 border border-teal-100 dark:border-teal-800">
+                            <span className="text-secondary dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-3 block">
                                 Trusted Pharmaceuticals Export Partner
                             </span>
-                            <h2 className="text-4xl lg:text-5xl font-display font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+                            <h2 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-6 leading-tight">
                                 We provide global-standard <span className="text-teal-600 dark:text-teal-400">pharmaceuticals solutions.</span>
                             </h2>
-                            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed max-w-2xl">
-                                AksharAvira Pharma is a leading supplier and exporter, committed to supporting healthcare systems worldwide.
+                            <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-2xl">
+                                Transcendence Pharma is a leading supplier and exporter, committed to supporting healthcare systems worldwide.
                                 With reliable sourcing and efficient global distribution, we ensure that healthcare providers receive the best products on time, every time.
                             </p>
                         </div>

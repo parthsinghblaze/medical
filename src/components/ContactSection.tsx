@@ -5,7 +5,7 @@ import Image from 'next/image';
 const contactInfo = [
     {
         title: "Send Us Mail",
-        info: "sales@aksharavira.com",
+        info: "info@transcendencepharma.com",
         icon: <Mail className="w-6 h-6 text-white" />,
         image: "/images/contact/scientist-mail.jpg", // Placeholder path
         alt: "Female scientist in laboratory"
@@ -32,10 +32,10 @@ export default function ContactSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header Section */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <span className="text-[#2acae4] font-bold text-sm uppercase tracking-widest mb-3 block">
+                    <span className="text-secondary dark:text-blue-400 font-bold text-sm uppercase tracking-widest mb-3 block">
                         Promising Best Quality Services
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    <h2 className="text-3xl md:text-5xl font-display font-bold text-primary dark:text-white mb-6">
                         Contact Transcendence Pharma
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">

@@ -43,10 +43,10 @@ export default function RLDPage() {
                         <Breadcrumb />
 
                         <div className="max-w-3xl">
-                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
-                                Reference Listed <br /> Drugs <span className="text-secondary">(RLDs)</span>
+                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white">
+                                Reference Listed <br /> Drugs <span className="text-secondary dark:text-blue-400">(RLDs)</span>
                             </h1>
-                            <p className="text-xl text-blue-100 leading-relaxed mb-4">
+                            <p className="text-xl text-blue-100/80 leading-relaxed mb-4">
                                 Reliable sourcing of comparator drugs and reference products for pharmaceutical research and development globally.
                             </p>
                         </div>
@@ -69,11 +69,11 @@ export default function RLDPage() {
 
                             {/* Right: Content & 3 Icons */}
                             <div>
-                                <h2 className="text-3xl font-display font-bold text-primary dark:text-white mb-6">
+                                <h2 className="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">
                                     Global Experts in Comparator Sourcing
                                 </h2>
-                                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
-                                    AksharAvira Pharma is a premier facilitator for sourcing Reference Listed Drugs (RLDs) and comparator samples across the globe. We understand that bioequivalence studies and generic development depend on the timely availability of the correct RLD batch.
+                                <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
+                                    Transcendence Pharma is a premier facilitator for sourcing Reference Listed Drugs (RLDs) and comparator samples across the globe. We understand that bioequivalence studies and generic development depend on the timely availability of the correct RLD batch.
                                 </p>
 
                                 <div className="grid grid-cols-1 sm:grid-cols-1 gap-6 mb-10">

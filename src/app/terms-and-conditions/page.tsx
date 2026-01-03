@@ -129,8 +129,8 @@ export default function TermsAndConditionsPage() {
                     <p>For any questions regarding these Terms & Conditions, please contact our legal and compliance department:</p>
                     <div className="p-6 bg-cyan-50 dark:bg-cyan-900/10 rounded-xl border border-cyan-100 dark:border-cyan-800/50 inline-block">
                         <p className="font-bold text-primary dark:text-blue-300 mb-1">Email:</p>
-                        <a href="mailto:info@aksharavirapharma.com" className="text-secondary hover:underline text-lg font-medium">
-                            info@aksharavirapharma.com
+                        <a href="mailto:info@transcendencepharma.com" className="text-secondary hover:underline text-lg font-medium">
+                            info@transcendencepharma.com
                         </a>
                     </div>
                 </div>
@@ -163,7 +163,7 @@ export default function TermsAndConditionsPage() {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.2 }}
-                                className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+                                className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
                             >
                                 Welcome to Transcendence Pharma. By accessing our website and using our services, you agree to the following terms and conditions. Please read them carefully before proceeding.
                             </motion.p>

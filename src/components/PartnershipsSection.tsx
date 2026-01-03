@@ -11,9 +11,9 @@ export default function PartnershipsSection() {
                 {/* HEADER */}
                 <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-24">
                     <h1 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-6">
-                        AksharAvira Partnerships
+                        Transcendence Partnerships
                     </h1>
-                    <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                         We collaborate with global distributors to expand the reach of our pharmaceutical and nutraceutical products, ensuring fast market access, regulatory support, and successful international roll-outs.
                     </p>
                 </div>
@@ -26,9 +26,9 @@ export default function PartnershipsSection() {
                             Exports – Pharma & Nutraceutical Partnerships
                         </h2>
 
-                        <div className="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-10">
+                        <div className="space-y-6 text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-10">
                             <p>
-                                AksharAvira Pharma is actively seeking strategic partnerships with distributors and pharmaceutical companies to expand the global reach of our <span className="font-bold text-gray-900 dark:text-white">Finished Dosage Forms (FDFs)</span> and <span className="font-bold text-gray-900 dark:text-white">Nutraceutical products</span>.
+                                Transcendence Pharma is actively seeking strategic partnerships with distributors and pharmaceutical companies to expand the global reach of our <span className="font-bold text-gray-900 dark:text-white">Finished Dosage Forms (FDFs)</span> and <span className="font-bold text-gray-900 dark:text-white">Nutraceutical products</span>.
                             </p>
                             <p>
                                 We collaborate with partners who have a <span className="font-bold text-gray-900 dark:text-white">strong market presence in semi-regulated and unregulated territories</span>, proven expertise in <span className="font-bold text-gray-900 dark:text-white">regulatory registration processes</span>, and the capability to execute effective <span className="font-bold text-gray-900 dark:text-white">market access strategies</span>.

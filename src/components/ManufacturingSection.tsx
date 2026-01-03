@@ -15,7 +15,7 @@ export default function ManufacturingSection() {
                             Manufacturing – Global Pharma Manufacturing Solutions
                         </h2>
 
-                        <div className="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                        <div className="space-y-6 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
                             <p>
                                 At Transcendence Pharma, we specialize in <span className="font-bold text-gray-900 dark:text-white">pharmaceutical manufacturing</span> and <span className="font-bold text-gray-900 dark:text-white">export solutions</span> under both our own and partner brand names.
                             </p>
