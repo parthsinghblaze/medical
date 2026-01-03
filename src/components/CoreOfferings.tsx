@@ -9,28 +9,32 @@ const offerings = [
         description: "Export-ready branded and generic medicines in various dosage forms for global distribution.",
         icon: Pill,
         color: "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400",
-        delay: 0
+        delay: 0,
+        href: "/services/finished-dosage-forms"
     },
     {
         title: "Active Pharma Ingredients",
         description: "High-purity APIs sourced from certified GMP manufacturers for production and formulation use.",
         icon: FlaskConical,
         color: "bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400",
-        delay: 0.1
+        delay: 0.1,
+        href: "/services/active-pharmaceutical-ingredients"
     },
     {
         title: "Nutraceuticals",
         description: "High-quality patented ingredients formulated in nutraceuticals meeting global market demand.",
         icon: Leaf,
         color: "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400",
-        delay: 0.2
+        delay: 0.2,
+        href: "/services/nutraceuticals"
     },
     {
         title: "Reference Listed Drugs",
         description: "We provide Reference Listed Drug (RLD) supply services to help generic drug development.",
         icon: FileCheck,
         color: "bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400",
-        delay: 0.3
+        delay: 0.3,
+        href: "/services/reference-listed-drugs"
     }
 ];
 
@@ -88,7 +92,8 @@ export default function CoreOfferings() {
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            className="bg-white dark:bg-surface-dark/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-xl dark:shadow-none transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden flex flex-col h-full"
+                            className="bg-white dark:bg-surface-dark/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-2xl dark:shadow-none transition-all duration-300 group cursor-pointer relative overflow-hidden flex flex-col h-full before:absolute before:top-0 before:left-0 before:w-full before:h-1 before:bg-secondary before:origin-left before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-500 after:absolute after:bottom-0 after:right-0 after:w-full after:h-1 after:bg-secondary after:origin-right after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500"
+                            whileHover={{ scale: 1.05 }}
                         >
                             {/* Hover Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-transparent to-gray-50/50 dark:to-gray-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -106,7 +111,7 @@ export default function CoreOfferings() {
                                     {offering.description}
                                 </p>
 
-                                <Link href="#" className="inline-flex items-center text-sm font-semibold text-primary dark:text-blue-400 group-hover:text-secondary transition-colors mt-auto">
+                                <Link href={offering.href} className="inline-flex items-center text-sm font-semibold text-primary dark:text-blue-400 group-hover:text-secondary transition-colors mt-auto">
                                     Learn more
                                     <ArrowUpRight size={16} className="ml-2 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                                 </Link>

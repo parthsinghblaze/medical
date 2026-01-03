@@ -1,29 +1,34 @@
 'use client';
 import { Globe, FileCheck, Binoculars, Truck } from 'lucide-react';
 import { motion } from 'framer-motion';
+import CountUp from 'react-countup';
 
 const stats = [
     {
         icon: Globe,
-        number: "38+",
+        value: 38,
+        suffix: "+",
         label: "Export markets in Asia, Africa, Europe, and Americas",
         color: "bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400"
     },
     {
         icon: FileCheck,
-        number: "100%",
+        value: 100,
+        suffix: "%",
         label: "Every product complies with international regulations and documentation requirements.",
         color: "bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400"
     },
     {
         icon: Binoculars,
-        number: "250+",
+        value: 250,
+        suffix: "+",
         label: "Extensive collection of rare molecules, APIs, and FDFs.",
         color: "bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400"
     },
     {
         icon: Truck,
-        number: "10+",
+        value: 10,
+        suffix: "+",
         label: "Proven track record in international logistics and pharmaceutical procurement",
         color: "bg-amber-100 text-amber-600 dark:bg-amber-900/30 dark:text-amber-400"
     }
@@ -50,7 +55,7 @@ export default function StatsSection() {
                             </div>
 
                             <h3 className="text-4xl font-display font-bold text-primary dark:text-white mb-4">
-                                {stat.number}
+                                <CountUp end={stat.value} duration={2.5} suffix={stat.suffix} enableScrollSpy scrollSpyOnce />
                             </h3>
 
                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
