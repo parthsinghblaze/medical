@@ -36,18 +36,19 @@ export default function ActivePharmaceuticalIngredientsPage() {
 
             <div className="flex-grow">
                 {/* Hero Section for APIs */}
-                <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-950 text-white py-20 lg:py-28 relative overflow-hidden">
+                <div className="bg-gradient-to-br from-primary via-blue-900 to-primary text-white py-20 lg:py-28 relative overflow-hidden">
+                    {/* Decorative Elements */}
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                         <Breadcrumb />
 
                         <div className="max-w-3xl">
-                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white">
-                                Active Pharmaceutical <br /> Ingredients <span className="text-secondary dark:text-blue-400">(APIs)</span>
+                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white text-balance">
+                                Active Pharmaceutical <br className="hidden md:block" /> Ingredients <span className="text-secondary dark:text-blue-400">(APIs)</span>
                             </h1>
                             <p className="text-xl text-blue-100/80 leading-relaxed mb-10">
-                                High-purity, stable, and compliant active ingredients that form the core of effective healthcare. Our API sourcing and supply chain ensure consistency and safety for pharmaceutical manufacturing.
+                                High-purity, stable, and compliant active ingredients that form the core of effective healthcare. Our API sourcing and supply chain ensure consistency and safety.
                             </p>
                         </div>
                     </div>
@@ -56,47 +57,75 @@ export default function ActivePharmaceuticalIngredientsPage() {
                 {/* Introductory Content */}
                 <section className="py-20 bg-white dark:bg-[#0B1121]">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                            <div className="order-2 lg:order-1">
-                                <div className="aspect-[4/3] bg-blue-50 dark:bg-blue-900/20 rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white dark:border-gray-800">
-                                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 dark:text-gray-600 italic">
-                                        API Molecular Structure Image
-                                    </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                            <div className="order-2 lg:order-1 sticky top-24">
+                                <div className="aspect-[4/5] bg-blue-50 dark:bg-blue-900/20 rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white dark:border-gray-800">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/api_main_sourcing.png"
+                                        alt="API Sourcing Excellence"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
                             </div>
-                            <div className="order-1 lg:order-2">
-                                <h2 className="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">
-                                    The Foundation of Quality Medicine
-                                </h2>
-                                <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
-                                    We provide a wide array of high-quality Active Pharmaceutical Ingredients (APIs) sourced from GMP-compliant manufacturers. Our commitment to purity and stability ensures that your finished formulations maintain their intended efficacy and safety profiles.
-                                </p>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                    <div className="flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50">
-                                        <div className="w-12 h-12 rounded-lg bg-white dark:bg-gray-900 flex items-center justify-center text-secondary shadow-sm">
-                                            <FlaskConical size={24} />
-                                        </div>
-                                        <span className="font-bold text-gray-800 dark:text-white">High Purity</span>
-                                    </div>
-                                    <div className="flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50">
-                                        <div className="w-12 h-12 rounded-lg bg-white dark:bg-gray-900 flex items-center justify-center text-secondary shadow-sm">
-                                            <Dna size={24} />
-                                        </div>
-                                        <span className="font-bold text-gray-800 dark:text-white">Biological Stability</span>
-                                    </div>
-                                    <div className="flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50">
-                                        <div className="w-12 h-12 rounded-lg bg-white dark:bg-gray-900 flex items-center justify-center text-secondary shadow-sm">
-                                            <ShieldCheck size={24} />
-                                        </div>
-                                        <span className="font-bold text-gray-800 dark:text-white">GMP Compliant</span>
-                                    </div>
-                                    <div className="flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50">
-                                        <div className="w-12 h-12 rounded-lg bg-white dark:bg-gray-900 flex items-center justify-center text-secondary shadow-sm">
-                                            <Zap size={24} />
-                                        </div>
-                                        <span className="font-bold text-gray-800 dark:text-white">Fast Distribution</span>
-                                    </div>
+                            <div className="order-1 lg:order-2 space-y-8">
+                                <div>
+                                    <h2 className="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">
+                                        Active Pharmaceutical Ingredients (APIs)
+                                    </h2>
+                                    <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                                        At <strong className="text-primary dark:text-blue-400">Transcendence Pharma</strong>, we understand that behind every life-saving medicine is a chain of trust—starting with the purity of its ingredients. We have spent years mastering the art of sourcing:
+                                    </p>
+                                    <ul className="mt-6 space-y-3 text-gray-700 dark:text-gray-300 text-lg">
+                                        <li className="flex items-start gap-3">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2.5 flex-shrink-0"></div>
+                                            <span><strong>High-purity APIs</strong> (USP/BP/IP compliance)</span>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2.5 flex-shrink-0"></div>
+                                            <span>Hard-to-find specialty APIs (<strong>Oncology, Rare Diseases, Cardiology</strong>)</span>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2.5 flex-shrink-0"></div>
+                                            <span>End-to-end regulatory support (<strong>DMF, CPP, GMP</strong>)</span>
+                                        </li>
+                                    </ul>
                                 </div>
+
+                                <div className="bg-blue-50 dark:bg-blue-900/10 p-8 rounded-3xl border-l-4 border-secondary">
+                                    <p className="text-gray-800 dark:text-gray-200 text-lg italic leading-relaxed font-display">
+                                        &ldquo;Founded by a team of pharmaceutical experts and supply chain veterans, <strong className="text-primary dark:text-blue-400">Transcendence Pharma</strong> was born from a simple idea: Great medicines start with great ingredients. No factories. No fluff. Just an obsessive focus on finding the right partner for your needs.&rdquo;
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h3 className="text-2xl md:text-3xl font-display font-bold text-primary dark:text-white mb-6 flex items-center gap-4">
+                                        Why Work With Us?
+                                        <div className="h-1 flex-grow bg-gradient-to-r from-secondary to-transparent rounded-full"></div>
+                                    </h3>
+                                    <ul className="space-y-6">
+                                        <li className="group">
+                                            <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-secondary transition-colors">Two Decades of Trust</h4>
+                                            <p className="text-gray-600 dark:text-gray-400">A curated global network of <strong>WHO-GMP-certified API suppliers</strong>, rigorously audited for quality.</p>
+                                        </li>
+                                        <li className="group">
+                                            <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-secondary transition-colors">Beyond Sourcing Solutions</h4>
+                                            <p className="text-gray-600 dark:text-gray-400">We handle regulatory hurdles, logistics, and documentation, so you don&apos;t have to.</p>
+                                        </li>
+                                        <li className="group">
+                                            <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-secondary transition-colors">Speciality Focus</h4>
+                                            <p className="text-gray-600 dark:text-gray-400">Rare APIs, oncology intermediates, peptides, and hard-to-find <strong>pharmacopoeia-grade ingredients</strong>.</p>
+                                        </li>
+                                        <li className="group">
+                                            <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-secondary transition-colors">Transparency First</h4>
+                                            <p className="text-gray-600 dark:text-gray-400">Full traceability, COAs, and stability data with every shipment.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <p className="text-xl font-bold text-secondary dark:text-blue-400 pt-4">
+                                    We are not just suppliers; we&apos;re your allies in making healthcare accessible.
+                                </p>
                             </div>
                         </div>
                     </div>

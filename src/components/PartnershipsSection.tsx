@@ -8,16 +8,6 @@ export default function PartnershipsSection() {
         <section className="py-20 lg:py-32 bg-white dark:bg-surface-dark overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                {/* HEADER */}
-                <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-24">
-                    <h1 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white mb-6">
-                        Transcendence Partnerships
-                    </h1>
-                    <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                        We collaborate with global distributors to expand the reach of our pharmaceutical and nutraceutical products, ensuring fast market access, regulatory support, and successful international roll-outs.
-                    </p>
-                </div>
-
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
 
                     {/* LEFT COLUMN */}
@@ -38,7 +28,7 @@ export default function PartnershipsSection() {
                             </p>
                         </div>
 
-                        <Link href="/services#fdf" className="inline-flex items-center gap-2 text-secondary dark:text-blue-400 font-bold hover:gap-3 transition-all duration-300 group">
+                        <Link href="/services/finished-dosage-forms" className="inline-flex items-center gap-2 text-secondary dark:text-blue-400 font-bold hover:gap-3 transition-all duration-300 group">
                             Explore our Finished Dosage Forms (FDFs) solutions
                             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </Link>
@@ -93,7 +83,7 @@ export default function PartnershipsSection() {
                                 </div>
                             </div>
 
-                            {/* Marker: Australia/Oceania */}
+                            {/* Marker: Oceania */}
                             <div className="absolute top-[75%] left-[88%] group cursor-pointer z-10 transition-transform duration-300 hover:scale-110">
                                 <div className="relative">
                                     <div className="w-8 h-8 bg-primary dark:bg-blue-500 rounded-full flex items-center justify-center shadow-lg">
@@ -102,6 +92,22 @@ export default function PartnershipsSection() {
                                     <div className="absolute inset-0 bg-primary/40 dark:bg-blue-500/40 rounded-full animate-ping delay-1000"></div>
                                     <div className="absolute top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white dark:bg-gray-800 text-[10px] font-bold px-2 py-1 rounded shadow text-nowrap pointer-events-none z-20 border border-gray-100 dark:border-gray-700">
                                         Oceania
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Marker: Latin America (LATAM) */}
+                            <div className="absolute top-[65%] left-[28%] group cursor-pointer z-10 transition-transform duration-300 hover:scale-110">
+                                <div className="relative">
+                                    {/* Standard Marker Style */}
+                                    <div className="w-8 h-8 bg-secondary dark:bg-blue-400 rounded-full flex items-center justify-center shadow-lg">
+                                        <Plus size={16} className="text-white" strokeWidth={3} />
+                                    </div>
+                                    <div className="absolute inset-0 bg-secondary/40 dark:bg-blue-400/40 rounded-full animate-ping delay-500"></div>
+
+                                    {/* Standard Hover Label */}
+                                    <div className="absolute top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white dark:bg-gray-800 text-[10px] font-bold px-2 py-1 rounded shadow text-nowrap pointer-events-none z-20 border border-gray-100 dark:border-gray-700">
+                                        Latin America (LATAM)
                                     </div>
                                 </div>
                             </div>

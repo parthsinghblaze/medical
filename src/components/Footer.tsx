@@ -158,7 +158,7 @@ export default function Footer() {
                 {/* BOTTOM SECTION - Copyright */}
                 <div className="border-t border-gray-200 dark:border-gray-800 py-8 text-center">
                     <p className="text-gray-500 dark:text-gray-400 text-sm">
-                        © 2025, <Link href="/" className="text-primary hover:text-primary/80 font-bold transition-colors">Transcendence Pharma</Link>, All rights reserved
+                        © 2026, <Link href="/" className="text-primary hover:text-primary/80 font-bold transition-colors">Transcendence Pharma</Link>, All rights reserved
                     </p>
                 </div>
 

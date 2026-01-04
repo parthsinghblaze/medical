@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 export default function FDFOptions() {
     const features = [
-        "Wide Range Of Therapeutic Categories",
-        "Compliance With International Regulations",
-        "High-Quality Standard And Generic Medicines",
-        "Ready For Distribution In Bulk"
+        "Wide range of therapeutic categories",
+        "Compliance with international regulations",
+        "High-quality standard and generic medicines",
+        "Ready for distribution in bulk"
     ];
 
     return (
@@ -14,9 +14,9 @@ export default function FDFOptions() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* HEADER */}
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-display font-bold text-primary dark:text-white mb-4">
-                        List Of Options
+                <div className="text-center mb-16 lg:mb-24">
+                    <h2 className="text-3xl lg:text-5xl font-display font-bold text-primary dark:text-white mb-4">
+                        List Of Process
                     </h2>
                     {/* Decorative wavy line */}
                     <div className="flex justify-center">
@@ -26,24 +26,37 @@ export default function FDFOptions() {
                     </div>
                 </div>
 
-                {/* IMAGE ROW (Top section) */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-                    {[1, 2, 3].map((item) => (
-                        <div key={item} className="aspect-[4/3] bg-gray-100 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 relative group">
-                            {/* Placeholder for images */}
-                            <div className="absolute inset-0 flex items-center justify-center text-gray-400 dark:text-gray-600 font-medium">
-                                Image Placeholder {item}
-                                <br />
-                                (Pharmaceutical/Lab)
+                {/* IMAGE ROW (High-Quality FDF Imagery) */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24 max-w-6xl mx-auto">
+                    {[
+                        { label: "Patient Care & Trust", src: "/images/doctors_transparent.png" },
+                        { label: "State-of-the-Art Production", src: "/images/fdf_tablets_capsules.png" },
+                        { label: "Specialty Formulations", src: "/images/fdf_injections.png" }
+                    ].map((img, index) => (
+                        <div key={index} className="aspect-[4/3] bg-blue-50/50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 relative group shadow-lg">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src={img.src}
+                                alt={img.label}
+                                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div>
+                            <div className="absolute inset-x-0 bottom-0 p-6">
+                                <p className="text-white text-lg font-bold drop-shadow-md">{img.label}</p>
+                                <div className="h-1 w-12 bg-secondary group-hover:w-full transition-all duration-300 rounded-full mt-2"></div>
                             </div>
-                            <div className="absolute inset-0 bg-blue-500/5 group-hover:bg-transparent transition-colors duration-300"></div>
                         </div>
                     ))}
                 </div>
 
                 {/* FEATURES GRID */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 max-w-5xl mx-auto">
-                    {features.map((feature, index) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 max-w-5xl mx-auto">
+                    {[
+                        "Wide range of therapeutic categories",
+                        "Compliance with international regulations",
+                        "High-quality standard and generic medicines",
+                        "Ready for distribution in bulk"
+                    ].map((option, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
@@ -59,7 +72,7 @@ export default function FDFOptions() {
 
                             {/* Feature Text */}
                             <h3 className="text-xl md:text-2xl font-display font-bold text-gray-800 dark:text-white leading-tight group-hover:text-secondary dark:group-hover:text-blue-400 transition-colors duration-300">
-                                {feature}
+                                {option}
                             </h3>
                         </motion.div>
                     ))}

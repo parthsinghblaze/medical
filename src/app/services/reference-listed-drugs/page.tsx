@@ -36,15 +36,16 @@ export default function RLDPage() {
 
             <div className="flex-grow">
                 {/* Hero Section */}
-                <div className="bg-gradient-to-br from-indigo-900 via-blue-900 to-slate-900 text-white py-20 lg:py-28 relative overflow-hidden">
+                <div className="bg-gradient-to-br from-primary via-blue-900 to-primary text-white py-20 lg:py-28 relative overflow-hidden">
+                    {/* Decorative Elements */}
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                         <Breadcrumb />
 
                         <div className="max-w-3xl">
-                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white">
-                                Reference Listed <br /> Drugs <span className="text-secondary dark:text-blue-400">(RLDs)</span>
+                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white text-balance">
+                                Reference Listed <br className="hidden md:block" /> Drugs <span className="text-secondary dark:text-blue-400">(RLDs)</span>
                             </h1>
                             <p className="text-xl text-blue-100/80 leading-relaxed mb-4">
                                 Reliable sourcing of comparator drugs and reference products for pharmaceutical research and development globally.
@@ -53,68 +54,83 @@ export default function RLDPage() {
                     </div>
                 </div>
 
-                {/* Intro Content Section - Standardized Layout */}
+                {/* Intro Content Section - Sticky Layout matching FDF/API */}
                 <section className="py-20 bg-white dark:bg-[#0B1121]">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                            {/* Left: Standard Image Placeholder */}
-                            <div className="relative">
-                                <div className="aspect-square bg-blue-50 dark:bg-blue-900/20 rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white dark:border-gray-800">
-                                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 dark:text-gray-600 italic">
-                                        Comparator Sourcing Image
-                                    </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                            {/* Left: Sticky Image */}
+                            <div className="sticky top-24 order-2 lg:order-1">
+                                <div className="aspect-[4/5] bg-blue-50 dark:bg-blue-900/20 rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white dark:border-gray-800">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/microscope.png"
+                                        alt="Reference Listed Drugs Sourcing"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
-                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-100 dark:bg-blue-900/30 rounded-2xl blur-3xl -z-10"></div>
                             </div>
 
-                            {/* Right: Content & 3 Icons */}
-                            <div>
-                                <h2 className="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">
-                                    Global Experts in Comparator Sourcing
-                                </h2>
-                                <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
-                                    Transcendence Pharma is a premier facilitator for sourcing Reference Listed Drugs (RLDs) and comparator samples across the globe. We understand that bioequivalence studies and generic development depend on the timely availability of the correct RLD batch.
+                            {/* Right: Detailed Content */}
+                            <div className="order-1 lg:order-2 space-y-8">
+                                <div>
+                                    <h2 className="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">
+                                        Reference Listed Drugs (RLDs)
+                                    </h2>
+                                    <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                                        At <strong className="text-primary dark:text-blue-400">Transcendence Pharma</strong>, we understand the critical role <strong>Reference Listed Drugs (RLDs)</strong> play in your research—whether for bioequivalence studies, ANDA (Abbreviated New Drug Application) submissions, or formulation reverse engineering. That’s why we’ve built a global sourcing network to deliver authentic, traceable RLDs with unmatched reliability.
+                                    </p>
+                                </div>
+
+                                <div className="bg-blue-50 dark:bg-blue-900/10 p-8 rounded-3xl border-l-4 border-secondary">
+                                    <p className="text-gray-800 dark:text-gray-200 text-lg italic leading-relaxed font-display">
+                                        &ldquo;Avoid delays: Partner with an RLD supplier that knows global compliance.&rdquo;
+                                    </p>
+                                </div>
+
+                                <div className="space-y-8">
+                                    <div>
+                                        <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Global Reach, Local Expertise</h4>
+                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                                            Source <strong>FDA/EMA/WHO-listed RLDs</strong> from 30+ countries, even hard-to-find products.
+                                        </p>
+                                        <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                                            <li className="flex items-start gap-3">
+                                                <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2.5 flex-shrink-0"></div>
+                                                <span>Navigate regional regulations seamlessly (e.g., EU-GMP, US Orange Book standards).</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">End-to-End Compliance</h4>
+                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                                            Full documentation: Certificates of Analysis (CoA), batch records, and import/export licences.
+                                        </p>
+                                        <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                                            <li className="flex items-start gap-3">
+                                                <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2.5 flex-shrink-0"></div>
+                                                <span>Strict cold-chain logistics for <strong>temperature-sensitive RLDs</strong>.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Strategic Support</h4>
+                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                                            Confused about RLD selection for complex generics? Our team advises on optimal comparator drugs.
+                                        </p>
+                                        <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                                            <li className="flex items-start gap-3">
+                                                <div className="w-1.5 h-1.5 rounded-full bg-secondary mt-2.5 flex-shrink-0"></div>
+                                                <span>Custom sourcing for <strong>obscure markets</strong> (e.g., Japan’s “Orange Guide” drugs).</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <p className="text-xl font-bold text-secondary dark:text-blue-400 pt-4">
+                                    We are not just suppliers; we&apos;re your allies in making healthcare accessible.
                                 </p>
-
-                                <div className="grid grid-cols-1 sm:grid-cols-1 gap-6 mb-10">
-                                    {[
-                                        {
-                                            title: "Global Reach, Local Expertise",
-                                            desc: "Source FDA/EMA/WHO-listed RLDs from 30+ countries seamlessly.",
-                                            icon: <Globe size={20} className="text-blue-500" />,
-                                            bg: "bg-blue-50 dark:bg-blue-900/20"
-                                        },
-                                        {
-                                            title: "End-to-End Compliance",
-                                            desc: "Full documentation including CoA, batch records, and licensing support.",
-                                            icon: <ShieldCheck size={20} className="text-emerald-500" />,
-                                            bg: "bg-emerald-50 dark:bg-emerald-900/20"
-                                        },
-                                        {
-                                            title: "Strategic Support",
-                                            desc: "Expert guidance for ANDA/bioequivalence and complex comparator selection.",
-                                            icon: <Zap size={20} className="text-amber-500" />,
-                                            bg: "bg-amber-50 dark:bg-amber-900/20"
-                                        }
-                                    ].map((sol, idx) => (
-                                        <div key={idx} className="flex gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-700/50 transition-all duration-300 border border-transparent hover:border-gray-100 dark:hover:border-gray-700 shadow-sm hover:shadow-md">
-                                            <div className={`mt-1 w-12 h-12 rounded-xl ${sol.bg} flex items-center justify-center shadow-inner flex-shrink-0`}>
-                                                {sol.icon}
-                                            </div>
-                                            <div className="pt-0.5">
-                                                <h4 className="font-bold text-gray-800 dark:text-white text-base mb-1">{sol.title}</h4>
-                                                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{sol.desc}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                {/* Featured Quote */}
-                                <div className="border-l-4 border-secondary pl-6 py-2">
-                                    <span className="text-xl font-display font-semibold text-primary dark:text-blue-300 italic">
-                                        "Avoid delays: Partner with an RLD supplier that knows global compliance."
-                                    </span>
-                                </div>
                             </div>
                         </div>
                     </div>

@@ -37,10 +37,10 @@ export default function Header() {
                         <div className="flex items-center space-x-4">
 
                             {/* Language Selector */}
-                            <button className="flex items-center hover:text-white transition-colors gap-1">
-                                <span className="uppercase">EN</span>
-                                <ChevronDown size={12} />
-                            </button>
+                            {/*<button className="flex items-center hover:text-white transition-colors gap-1">*/}
+                            {/*    <span className="uppercase">EN</span>*/}
+                            {/*    <ChevronDown size={12} />*/}
+                            {/*</button>*/}
                         </div>
                     </div>
                 </div>

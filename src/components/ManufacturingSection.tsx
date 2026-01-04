@@ -76,6 +76,19 @@ export default function ManufacturingSection() {
                                     </div>
                                 </div>
                             </div>
+
+                            {/* Marker 4: Latin America (LATAM) */}
+                            <div className="absolute top-[65%] left-[28%] group cursor-pointer z-10 transition-transform duration-300 hover:scale-110">
+                                <div className="relative">
+                                    <div className="w-8 h-8 bg-primary dark:bg-blue-500 rounded-full flex items-center justify-center shadow-lg border-2 border-white dark:border-gray-800">
+                                        <Plus size={16} className="text-white" strokeWidth={3} />
+                                    </div>
+                                    <div className="absolute inset-0 bg-primary/40 dark:bg-blue-500/40 rounded-full animate-ping delay-700"></div>
+                                    <div className="absolute top-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white dark:bg-gray-800 text-[10px] font-bold px-2 py-1 rounded shadow text-nowrap pointer-events-none z-20 border border-gray-100 dark:border-gray-700">
+                                        Latin America (LATAM)
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Decorative background glow */}

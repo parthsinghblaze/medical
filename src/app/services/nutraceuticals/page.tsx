@@ -60,15 +60,16 @@ export default function NutraceuticalsPage() {
 
             <div className="flex-grow">
                 {/* Hero Section */}
-                <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-950 text-white py-20 lg:py-28 relative overflow-hidden">
+                <div className="bg-gradient-to-br from-primary via-blue-900 to-primary text-white py-20 lg:py-28 relative overflow-hidden">
+                    {/* Decorative Elements */}
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                         <Breadcrumb />
 
-                        <div className="max-w-2xl">
-                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white">
-                                Nutraceutical <br /> Solutions
+                        <div className="max-w-3xl">
+                            <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white text-balance">
+                                Nutraceutical <br className="hidden md:block" /> Solutions
                             </h1>
                             <p className="text-xl text-blue-100/80 leading-relaxed mb-4">
                                 Crafting high-impact health and wellness supplements with scientific precision and natural purity.
@@ -77,55 +78,76 @@ export default function NutraceuticalsPage() {
                     </div>
                 </div>
 
-                {/* Intro Content Section - Same as Previous 3 Layout */}
+                {/* Intro Content Section - Sticky Layout matching FDF/API/RLD */}
                 <section className="py-20 bg-white dark:bg-[#0B1121]">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                            {/* Left: Standard Image Placeholder */}
-                            <div className="relative">
-                                <div className="aspect-square bg-emerald-50 dark:bg-emerald-900/20 rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white dark:border-gray-800">
-                                    <div className="absolute inset-0 flex items-center justify-center text-emerald-700/40 dark:text-emerald-500/40 italic">
-                                        Wellness & Health Image
-                                    </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                            {/* Left: Sticky Image */}
+                            <div className="sticky top-24 order-2 lg:order-1">
+                                <div className="aspect-[4/5] bg-emerald-50 dark:bg-emerald-900/20 rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white dark:border-gray-800">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src="/images/fdf_tablets_capsules.png"
+                                        alt="Nutraceutical Solutions"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
-                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-emerald-100 dark:bg-emerald-900/30 rounded-2xl blur-3xl -z-10"></div>
                             </div>
 
-                            {/* Right: Content & 4 Icons */}
-                            <div>
-                                <h2 className="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">
-                                    Transcendence Pharma – Your Trusted Nutraceutical Partner
-                                </h2>
-                                <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
-                                    At Transcendence Pharma, we don't just manufacture nutraceuticals—we craft health solutions that people trust. With state-of-the-art facilities, rigorous quality control, and a passion for wellness, we help brands bring high-impact supplements to life.
-                                </p>
-
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
-                                    {solutions.map((sol, idx) => (
-                                        <div key={idx} className="flex flex-col gap-2 p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-emerald-50/50 dark:hover:bg-emerald-900/20 transition-colors duration-300">
-                                            <div className="w-10 h-10 rounded-lg bg-white dark:bg-gray-900 flex items-center justify-center shadow-sm">
-                                                {sol.icon}
-                                            </div>
-                                            <div>
-                                                <h4 className="font-bold text-gray-800 dark:text-white text-sm">{sol.title}</h4>
-                                                <p className="text-xs text-gray-500 dark:text-gray-400">{sol.desc}</p>
-                                            </div>
-                                        </div>
-                                    ))}
+                            {/* Right: Detailed Content */}
+                            <div className="order-1 lg:order-2 space-y-8">
+                                <div>
+                                    <h2 className="text-3xl md:text-4xl font-display font-bold text-primary dark:text-white mb-6">
+                                        Nutraceuticals
+                                    </h2>
+                                    <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                                        <strong className="text-primary dark:text-blue-400">Transcendence Pharma</strong> – Your Trusted <strong>Nutraceutical</strong> Partner
+                                    </p>
+                                    <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                                        At <strong className="text-primary dark:text-blue-400">Transcendence Pharma</strong>, we don’t just manufacture <strong>nutraceuticals</strong>—we craft health solutions that people trust. With state-of-the-art facilities, rigorous quality control, and a passion for wellness, we help brands bring high-impact supplements to life.
+                                    </p>
                                 </div>
 
-                                {/* Simplified Tagline */}
-                                <motion.div
-                                    initial={{ opacity: 0, x: 20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.6 }}
-                                    viewport={{ once: true }}
-                                    className="border-l-4 border-emerald-500 pl-6 py-2"
-                                >
-                                    <span className="text-2xl font-display font-semibold text-emerald-600 dark:text-emerald-400 italic">
-                                        "Quality That Feeds Wellness."
-                                    </span>
-                                </motion.div>
+                                <div className="bg-emerald-50 dark:bg-emerald-900/10 p-8 rounded-3xl border-l-4 border-emerald-500">
+                                    <p className="text-gray-800 dark:text-gray-200 text-lg italic leading-relaxed font-display">
+                                        &ldquo;Quality That Feeds Wellness.&rdquo;
+                                    </p>
+                                </div>
+
+                                <div className="space-y-8">
+                                    <h3 className="text-2xl font-display font-bold text-primary dark:text-white">Our Nutraceutical Solutions:</h3>
+                                    <div>
+                                        <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Premium Supplements</h4>
+                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                            Multivitamins, herbal extracts, probiotics & more.
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Innovative Delivery Systems</h4>
+                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                            Tablets, softgels, gummies, powders.
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Clean & Natural</h4>
+                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                            Organic, non-GMO, allergen-free options available.
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Global Reach</h4>
+                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                            Seamless export support to the USA, Europe, LATAM & beyond.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p className="text-xl font-bold text-secondary dark:text-blue-400 pt-4">
+                                    We are not just suppliers; we&apos;re your allies in making healthcare accessible.
+                                </p>
                             </div>
                         </div>
                     </div>

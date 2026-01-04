@@ -74,8 +74,8 @@ export default function ValueProposition() {
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                 <div className="aspect-[4/5] bg-gray-200 w-full relative">
                                     <Image
-                                        src="/images/trust_doctors.png"
-                                        alt="Pharmaceutical Team"
+                                        src="/images/pharmaceutical_professionals.png"
+                                        alt="Professional Pharmaceutical Team"
                                         fill
                                         className="object-cover bg-teal-50 dark:bg-teal-900/10"
                                     />
