@@ -130,8 +130,28 @@ export default function FinishedDosageFormsPage() {
                     </div>
                 </section>
 
+
                 {/* The Requested List of Options Section */}
                 <FDFOptions />
+
+                {/* Call to Action for Catalog */}
+                <div className="py-12 bg-blue-50 dark:bg-blue-900/10 text-center">
+                    <div className="max-w-4xl mx-auto px-4">
+                        <h3 className="text-2xl md:text-3xl font-display font-bold text-primary dark:text-white mb-6">
+                            Explore Our Complete Range of Products
+                        </h3>
+                        <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+                            Discover our extensive portfolio of finished dosage formulations across various therapeutic categories.
+                        </p>
+                        <Link
+                            href="/services/fdf-products"
+                            className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-secondary/25"
+                        >
+                            View Product Catalog
+                            <ChevronRight className="w-5 h-5" />
+                        </Link>
+                    </div>
+                </div>
 
             </div>
 
