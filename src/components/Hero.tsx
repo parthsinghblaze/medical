@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import ThreeScene from './ThreeScene'; // Adjust import path if needed
+import Link from 'next/link';
 
 export default function Hero() {
     return (
@@ -55,12 +56,13 @@ export default function Hero() {
                             transition={{ delay: 0.5, duration: 0.6 }}
                             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-10"
                         >
-                            <button className="bg-secondary hover:bg-blue-700 text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-1 active:translate-y-0 text-sm tracking-wide">
+                            <Link href="/product-catalog" className="bg-secondary hover:bg-blue-700 text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-1 active:translate-y-0 text-sm tracking-wide text-center flex items-center justify-center">
                                 View Product Catalog
-                            </button>
-                            <button className="bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm text-slate-700 dark:text-white border border-slate-200 dark:border-slate-700 px-8 py-3.5 rounded-full font-bold transition-all hover:bg-white dark:hover:bg-slate-800 shadow-sm hover:shadow text-sm tracking-wide">
+                            </Link>
+
+                            <Link href="/contact-us" className="bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm text-slate-700 dark:text-white border border-slate-200 dark:border-slate-700 px-8 py-3.5 rounded-full font-bold transition-all hover:bg-white dark:hover:bg-slate-800 shadow-sm hover:shadow text-sm tracking-wide text-center flex items-center justify-center">
                                 Partner With Us
-                            </button>
+                            </Link>
                         </motion.div>
 
                     </motion.div>
